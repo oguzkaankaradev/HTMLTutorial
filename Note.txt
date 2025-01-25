@@ -1,0 +1,2 @@
+https://www.w3schools.com/html/default.asp
+Bu sayfadaki linkte HTML referances bölümünde linklere HTML full bittikten sonnra bakılıcaktır.
