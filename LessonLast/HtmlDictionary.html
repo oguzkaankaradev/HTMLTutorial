@@ -1,0 +1,6264 @@
+<!--HTML nedir?  
+HTML, "Hyper Text Markup Language"ın kısaltmasıdır.  
+HTML, web sayfaları oluşturmak için kullanılan standart işaretleme dilidir.  
+HTML, bir web sayfasının yapısını tanımlar.  
+HTML, bir dizi öğeden oluşur.  
+HTML öğeleri, tarayıcıya içeriği nasıl görüntüleyeceğini söyler.  
+HTML öğeleri, içeriğin parçalarını etiketler, örneğin "bu bir başlık", "bu bir paragraf", "bu bir bağlantı" gibi.  
+
+
+HTML Elemanı Nedir?
+Bir HTML elemanı, bir başlangıç etiketi, içerik ve bir bitiş etiketi ile tanımlanır:
+
+<etiketadı> İçerik buraya gelir... </etiketadı>
+
+HTML elemanı, başlangıç etiketinden bitiş etiketine kadar olan her şeydir:
+
+<h1>İlk Başlığım</h1>
+<p>İlk paragrafım.</p>
+
+-->
+<!--<!DOCTYPE html> bildirimi, bu belgenin bir HTML5 belgesi olduğunu tanımlar.
+-->
+<!DOCTYPE html>
+<!--<html> elementi, bir HTML sayfasının kök elementidir.
+    HTML belgesinin kendisi <html> ile başlar ve </html> ile biter.-->
+<html lang="en">
+<!--Tüm dil kodlarını HTML Dil Kodları Referansı'nda bulabilirsiniz.
+    style Attribute
+    style attribute, bir elemente renk, yazı tipi, boyut ve daha fazlasını eklemek için kullanılır.
+    
+    Örnek:
+    
+    html
+    Kopyala
+    Düzenle
+    <p style="color:red;">Bu kırmızı bir paragraftır.</p>
+    Daha fazla bilgiyi HTML Stiller bölümünde öğrenebilirsiniz.
+    
+    lang Attribute
+    <html> etiketi içinde lang attribute her zaman eklenmelidir. Bu, web sayfasının dilini belirtmek içindir ve arama motorları ile tarayıcılara yardımcı olur.-->
+<!--<head> elementi, HTML sayfası hakkında meta bilgileri içerir.-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<title> elementi, HTML sayfası için bir başlık belirler (bu başlık tarayıcının başlık çubuğunda veya sayfanın sekmesinde gösterilir).-->
+  <title>YouTube</title>
+</head>
+<!--<body> elementi, belgenin gövdesini tanımlar ve başlıklar, paragraflar, resimler, bağlantılar, tablolar, listeler gibi tüm görünür içerikler için bir konteyner görevi görür.
+    HTML belgesinin görünen kısmı <body> ve </body> etiketleri arasındadır.-->
+
+<body>
+  <h1>h1 : HTML Başlıkları</h1>
+  <h2>h2 : HTML Başlıkları</h2>
+  <h3>h3 : HTML Başlıkları</h3>
+  <h4>h4 : HTML Başlıkları</h4>
+  <H5>h5 : HTML Başlıkları</H5>
+  <H6>h6 : HTML Başlıkları</H6>
+
+  <p>
+  <p> elementi, bir paragraf tanımlar.</p>
+
+  <!--
+    Bağlantının hedefi `href` özelliğinde belirtilir.  
+
+Attributes, HTML öğeleri hakkında ek bilgi sağlamak için kullanılır.  
+
+Attributes hakkında daha fazla bilgiyi ilerleyen bir bölümde öğreneceksiniz.  
+    -->
+  <a href="baglanti.html">Html bağlantısını öğrenmek için tıklayınız</a>
+
+  <!--HTML Görselleri
+HTML görselleri <img> etiketiyle tanımlanır.
+
+Kaynak dosya (src), alternatif metin (alt), genişlik (width) ve yükseklik (height) özellikler olarak belirtilir:-->
+  <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+  <!--Not: Bazı HTML elemanlarının içeriği yoktur (örneğin, `<br>` elemanı). Bu elemanlara boş elemanlar denir. Boş elemanların bitiş etiketi yoktur!-->
+
+  <!--**İç içe HTML Elemanları**  
+HTML elemanları iç içe olabilir (bu, elemanların diğer elemanları içerebileceği anlamına gelir).  
+
+Tüm HTML belgeleri, iç içe geçmiş HTML elemanlarından oluşur.  
+
+Aşağıdaki örnek, dört HTML elemanı içerir (`<html>`, `<body>`, `<h1>` ve `<p>`):  -->
+
+  <!--Bitiş Etiketini Asla Atlamayın
+Bazı HTML elemanları, bitiş etiketini unutsanız bile doğru şekilde görüntülenir:-->
+
+  <!--
+**HTML Harf Duyarlı Değildir**  
+HTML etiketleri harf duyarlı değildir: `<P>` ile `<p>` aynı anlama gelir.  
+
+HTML standardı küçük harfli etiketleri zorunlu kılmaz, ancak W3C, HTML'de küçük harf kullanılmasını önerir ve XHTML gibi daha katı belge türlerinde küçük harf kullanımını zorunlu kılar.  
+-->
+
+  <!--
+**HTML Attributes**  
+HTML özellikleri, HTML elemanları hakkında ek bilgi sağlar.  
+
+**HTML Attributes**  
+- Tüm HTML elemanları Attributes sahip olabilir.  
+- Attributes, elemanlar hakkında ek bilgi sağlar.  
+- Attributes her zaman başlangıç etiketinde belirtilir.  
+- Attributes genellikle ad/değer çiftleri şeklinde gelir, örneğin: `name="value"`.  
+
+**href Attributes**  
+`<a>` etiketi bir köprü tanımlar. `href` özelliği, bağlantının gittiği sayfanın URL'sini belirtir:  
+-->
+
+  <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+  <!--
+
+src Attributes
+<img> etiketi, bir HTML sayfasına bir görsel yerleştirmek için kullanılır. src Attributes, görüntülenecek görselin yolunu belirtir:
+-->
+
+  <img src="img_girl.jpg">
+  <!--
+**src Attribute**  
+`src` attribute için URL belirtmenin iki yolu vardır:  
+
+1. **Mutlak URL** - Başka bir web sitesinde barındırılan harici bir görsele bağlantı verir.  
+   Örnek: `src="https://www.w3schools.com/images/img_girl.jpg"`.  
+
+   Notlar: Harici görseller telif hakkına tabi olabilir. İzin almadan kullanırsanız, telif hakkı yasalarını ihlal edebilirsiniz. Ayrıca, harici görselleri kontrol edemezsiniz; aniden kaldırılabilir veya değiştirilebilir.  
+
+2. **Göreceli URL** - Web sitesi içinde barındırılan bir görsele bağlantı verir. Burada URL, alan adını içermez.  
+   - URL bir eğik çizgiyle başlamazsa, geçerli sayfaya göre göreceli olur.  
+     Örnek: `src="img_girl.jpg"`.  
+   - URL bir eğik çizgiyle başlıyorsa, alan adına göre göreceli olur.  
+     Örnek: `src="/images/img_girl.jpg"`.  
+
+**İpucu:** Genellikle en iyi yöntem göreceli URL'ler kullanmaktır. Alan adını değiştirdiğinizde kırılmazlar.  
+-->
+
+  <!--**width ve height Attribute'ları**  
+`<img>` etiketi, görselin genişliğini ve yüksekliğini (piksel cinsinden) belirten `width` ve `height` attribute'larını da içermelidir:  -->
+
+  <img src="img_girl.jpg" width="500" height="600">
+
+  <!--**alt Attribute**  
+`<img>` etiketi için gerekli olan `alt` attribute, bir görselin alternatif metnini belirtir. Bu, görselin herhangi bir nedenle görüntülenememesi durumunda kullanılır. Bunun nedeni yavaş bir bağlantı, `src` attribute'unda bir hata veya kullanıcının ekran okuyucu kullanması olabilir.  -->
+
+  <img src="img_girl.jpg" alt="Girl with a jacket">
+
+  <!--style Attribute
+style attribute, bir elemente renk, yazı tipi, boyut ve daha fazlasını eklemek için kullanılır.-->
+
+  <p style="color:red;">Bu kırmızı bir paragraftır.</p>
+
+  <!--
+style Attribute
+style attribute, bir elemente renk, yazı tipi, boyut ve daha fazlasını eklemek için kullanılır.
+
+Örnek:
+
+html
+Kopyala
+Düzenle
+<p style="color:red;">Bu kırmızı bir paragraftır.</p>
+Daha fazla bilgiyi HTML Stiller bölümünde öğrenebilirsiniz.
+
+lang Attribute
+<html> etiketi içinde lang attribute her zaman eklenmelidir. Bu, web sayfasının dilini belirtmek içindir ve arama motorları ile tarayıcılara yardımcı olur.
+
+Örnek:
+İngilizce bir dil belirtmek:
+
+html
+Kopyala
+Düzenle
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+Dil koduna ülke kodu da eklenebilir. İlk iki karakter HTML sayfasının dilini, son iki karakter ise ülkeyi belirtir.
+
+Örnek:
+İngilizce (ABD) belirtmek:
+
+html
+Kopyala
+Düzenle
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+...
+</body>
+</html>
+Tüm dil kodlarını HTML Dil Kodları Referansı'nda bulabilirsiniz.
+
+title Attribute
+title attribute, bir element hakkında ekstra bilgi tanımlar.
+
+title attribute'un değeri, fare ile elementin üzerine geldiğinizde bir balon ipucu (tooltip) olarak görüntülenir.-->
+  <p title="Ben bir balon ipucuyum">Bu bir paragraftır.</p>
+
+  <!--
+2. Attribute Değerlerini Her Zaman Tırnak İçinde Yazın
+HTML standardı, attribute değerlerinin tırnak içinde olmasını zorunlu kılmaz. Ancak W3C, HTML'de tırnak kullanımını önerir ve XHTML gibi katı belgeler için tırnak kullanımını zorunlu kılar.
+-->
+
+  <!--Tek veya Çift Tırnak?
+Attribute değerleri için çift tırnak en yaygın olandır, ancak tek tırnak da kullanılabilir.
+Eğer attribute değeri çift tırnak içeriyorsa, tek tırnak kullanmanız gerekir:-->
+
+  <p title='John "ShotGun" Nelson'>
+
+    <!--Ya da tam tersi:-->
+  <p title="John 'ShotGun' Nelson">
+    <!--Bölüm Özeti:
+Tüm HTML elemanları attribute'lara sahip olabilir.
+<a> etiketindeki href attribute, bağlantının yönlendirildiği URL'yi belirtir.
+<img> etiketindeki src attribute, gösterilecek görselin yolunu belirtir.
+<img> etiketindeki width ve height attribute'ları, görsellerin boyut bilgisini sağlar.
+<img> etiketindeki alt attribute, görsel için alternatif metin sunar.
+style attribute, bir elemente renk, yazı tipi, boyut gibi stiller eklemek için kullanılır.
+<html> etiketindeki lang attribute, web sayfasının dilini belirtir.
+title attribute, bir element hakkında ekstra bilgi tanımlar.
+-->
+
+    <!--
+**Başlıklar Önemlidir**  
+Arama motorları, web sayfalarınızın yapısını ve içeriğini dizine eklemek için başlıkları kullanır.  
+
+Kullanıcılar genellikle bir sayfayı başlıklarına göre hızlıca gözden geçirir. Bu nedenle, belge yapısını göstermek için başlıkları kullanmak önemlidir.  
+
+`<h1>` başlıkları ana başlıklar için kullanılmalıdır, ardından `<h2>` başlıkları, daha az önemli olan `<h3>` başlıkları ve bu şekilde devam etmelidir.  
+
+**Not:** HTML başlıklarını yalnızca başlıklar için kullanın. Metni BÜYÜK veya kalın yapmak için başlıkları kullanmayın.  
+-->
+
+    <!--
+Daha Büyük Başlıklar
+Her HTML başlığının varsayılan bir boyutu vardır. Ancak, herhangi bir başlığın boyutunu style attribute ile, CSS font-size özelliğini kullanarak belirtebilirsiniz:
+-->
+  <h1 style="font-size:60px;">Heading 1</h1>
+
+  <!--
+
+HTML Paragraflar ve Görünüm
+HTML Paragrafları
+
+Bir paragraf her zaman yeni bir satırda başlar ve genellikle bir metin bloğudur.
+<p> etiketi, bir paragrafı tanımlar.
+Tarayıcılar, paragrafların önüne ve arkasına otomatik olarak boşluk (kenar boşluğu) ekler.
+-->
+  <p>Bu bir paragraftır.</p>
+  <p>Bu başka bir paragraftır.</p>
+
+  <!--
+HTML Görünümü
+
+Farklı ekran boyutları ve yeniden boyutlandırılmış pencereler, farklı görüntüleme sonuçları oluşturabilir.
+HTML'de, fazladan boşluklar veya satır eklemek görüntüyü değiştirmez. Tarayıcı, fazladan boşlukları ve satırları otomatik olarak kaldırır.
+-->
+
+  <p>
+    Bu paragraf
+    birçok satır içerir
+    ama tarayıcı
+    bunu yok sayar.
+  </p>
+
+  <!--
+HTML Yatay Çizgiler
+<hr> etiketi, HTML sayfasında tematik bir ayrım tanımlar ve genellikle yatay bir çizgi olarak gösterilir.
+İçerikleri ayırmak veya değişikliği belirtmek için kullanılır.
+<hr> boş bir etikettir, yani bitiş etiketi yoktur.
+-->
+
+  <h1>Başlık 1</h1>
+  <p>Bu bir metindir.</p>
+  <hr>
+  <h2>Başlık 2</h2>
+  <p>Bu başka bir metindir.</p>
+
+
+  <!--
+HTML Satır Sonları
+<br> etiketi bir satır sonu tanımlar.
+Yeni bir paragraf başlatmadan yeni bir satır eklemek için kullanılır.
+<br> etiketi de boş bir etikettir ve bitiş etiketi yoktur.
+-->
+  <p>Bu bir<br>satır sonu<br>içeren paragraftır.</p>
+
+  <!--
+Şiir Formatlama Sorunu
+Paragraflar <p> etiketiyle yazıldığında, şiir gibi metinler bir satırda görüntülenebilir.
+-->
+  <p>
+    My Bonnie lies over the ocean.
+    My Bonnie lies over the sea.
+  </p>
+
+  <!--
+
+HTML Paragraflar ve Görünüm
+HTML Paragrafları
+
+Bir paragraf her zaman yeni bir satırda başlar ve genellikle bir metin bloğudur.
+<p> etiketi, bir paragrafı tanımlar.
+Tarayıcılar, paragrafların önüne ve arkasına otomatik olarak boşluk (kenar boşluğu) ekler.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<p>Bu bir paragraftır.</p>
+<p>Bu başka bir paragraftır.</p>
+HTML Görünümü
+
+Farklı ekran boyutları ve yeniden boyutlandırılmış pencereler, farklı görüntüleme sonuçları oluşturabilir.
+HTML'de, fazladan boşluklar veya satır eklemek görüntüyü değiştirmez. Tarayıcı, fazladan boşlukları ve satırları otomatik olarak kaldırır.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<p>
+Bu paragraf
+birçok satır içerir
+ama tarayıcı
+bunu yok sayar.
+</p>
+HTML Yatay Çizgiler
+<hr> etiketi, HTML sayfasında tematik bir ayrım tanımlar ve genellikle yatay bir çizgi olarak gösterilir.
+İçerikleri ayırmak veya değişikliği belirtmek için kullanılır.
+<hr> boş bir etikettir, yani bitiş etiketi yoktur.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<h1>Başlık 1</h1>
+<p>Bu bir metindir.</p>
+<hr>
+<h2>Başlık 2</h2>
+<p>Bu başka bir metindir.</p>
+HTML Satır Sonları
+<br> etiketi bir satır sonu tanımlar.
+Yeni bir paragraf başlatmadan yeni bir satır eklemek için kullanılır.
+<br> etiketi de boş bir etikettir ve bitiş etiketi yoktur.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<p>Bu bir<br>satır sonu<br>içeren paragraftır.</p>
+Şiir Formatlama Sorunu
+Paragraflar <p> etiketiyle yazıldığında, şiir gibi metinler bir satırda görüntülenebilir.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<p>
+  My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+</p>
+Çözüm: HTML <pre> Elemanı
+<pre> etiketi, önceden biçimlendirilmiş metni tanımlar.
+İçindeki metin, sabit genişlikli bir yazı tipinde (genellikle Courier) görüntülenir ve hem boşluklar hem de satır sonları korunur.
+-->
+  <pre>
+    My Bonnie lies over the ocean.
+    My Bonnie lies over the sea.
+  </pre>
+  <!--
+Özet:
+<p> etiketi paragrafları tanımlar ve otomatik boşluk ekler.
+<hr> etiketi tematik bir ayrımı belirtmek için kullanılır ve yatay bir çizgi oluşturur.
+<br> etiketi satır sonu ekler, ancak yeni bir paragraf başlatmaz.
+Şiir ve benzeri formatlar için <pre> etiketi kullanılarak metin düzeni korunabilir.
+-->
+
+
+  <!--
+HTML Stiller
+HTML style Attribute
+
+HTML elementlerine stil eklemek için style attribute kullanılır.
+Renk, yazı tipi, boyut ve daha fazlasını belirlemek için kullanabilirsiniz.
+
+Sözdizimi:
+<tagname style="property:value;">
+property: Bir CSS özelliği.
+value: CSS değeridir.
+
+-->
+
+  <!--
+
+HTML Stiller
+HTML style Attribute
+
+HTML elementlerine stil eklemek için style attribute kullanılır.
+Renk, yazı tipi, boyut ve daha fazlasını belirlemek için kullanabilirsiniz.
+Sözdizimi:
+
+html
+Kopyala
+Düzenle
+<tagname style="property:value;">
+property: Bir CSS özelliği.
+value: CSS değeridir.
+Arka Plan Rengi (Background Color)
+CSS background-color özelliği, bir HTML elementi için arka plan rengini tanımlar.
+
+Örnek:
+Tüm sayfa için arka plan rengini ayarlamak:
+-->
+
+  <body style="background-color:powderblue;">
+    <h1>Bu bir başlıktır</h1>
+    <p>Bu bir paragraftır.</p>
+  </body>
+
+  <!--
+Metin Rengi (Text Color)
+CSS color özelliği, bir HTML elementi için metin rengini tanımlar.
+-->
+  <h1 style="color:blue;">Bu bir başlıktır</h1>
+  <p style="color:red;">Bu bir paragraftır.</p>
+
+  <!--
+Yazı Tipi (Fonts)
+CSS font-family özelliği, bir HTML elementi için kullanılacak yazı tipini tanımlar.
+-->
+  <h1 style="font-family:verdana;">Bu bir başlıktır</h1>
+  <p style="font-family:courier;">Bu bir paragraftır.</p>
+
+  <!--
+Yazı Boyutu (Text Size)
+CSS font-size özelliği, bir HTML elementi için metin boyutunu tanımlar.
+-->
+
+  <h1 style="font-size:300%;">Bu bir başlıktır</h1>
+  <p style="font-size:160%;">Bu bir paragraftır.</p>
+
+  <!--
+Metin Hizalama (Text Alignment)
+CSS text-align özelliği, bir HTML elementi için yatay metin hizalamasını tanımlar.
+-->
+  <h1 style="text-align:center;">Ortalanmış Başlık</h1>
+  <p style="text-align:center;">Ortalanmış paragraf.</p>
+
+  <!--
+Bölüm Özeti:
+HTML elementlerini stillendirmek için style attribute kullanabilirsiniz.
+Arka Plan Rengi: background-color kullanın.
+Metin Rengi: color kullanın.
+Yazı Tipi: font-family kullanın.
+Yazı Boyutu: font-size kullanın.
+Metin Hizalaması: text-align kullanın.
+-->
+
+
+  <!--
+HTML Metin Biçimlendirme
+HTML, özel bir anlam taşıyan metinleri tanımlamak için çeşitli elementler içerir.
+
+HTML Biçimlendirme Elementleri
+Biçimlendirme elementleri, özel türdeki metinleri göstermek için tasarlanmıştır:
+
+<b> - Kalın metin
+<strong> - Önemli metin
+<i> - İtalik metin
+<em> - Vurgulanmış metin
+<mark> - İşaretlenmiş metin
+<small> - Küçük metin
+<del> - Silinmiş metin
+<ins> - Eklenmiş metin
+<sub> - Alt simge metin
+<sup> - Üst simge metin
+
+-->
+  <!--
+HTML <b> ve <strong> Elementleri
+<b>: Kalın metin tanımlar, ancak ekstra bir önem taşımaz.
+    <strong>: Önemli metin tanımlar ve genellikle kalın görüntülenir.
+-->
+  <b>Bu metin kalın</b>
+  <strong>Bu metin önemlidir!</strong>
+
+  <!--
+
+HTML Metin Biçimlendirme
+HTML, özel bir anlam taşıyan metinleri tanımlamak için çeşitli elementler içerir.
+
+Örnek:
+html
+Kopyala
+Düzenle
+<b>Bu metin kalın</b>  
+<i>Bu metin italik</i>  
+<sub>Bu alt simge</sub> ve <sup>bu üst simge</sup>
+HTML Biçimlendirme Elementleri
+Biçimlendirme elementleri, özel türdeki metinleri göstermek için tasarlanmıştır:
+
+<b> - Kalın metin
+<strong> - Önemli metin
+<i> - İtalik metin
+<em> - Vurgulanmış metin
+<mark> - İşaretlenmiş metin
+<small> - Küçük metin
+<del> - Silinmiş metin
+<ins> - Eklenmiş metin
+<sub> - Alt simge metin
+<sup> - Üst simge metin
+HTML <b> ve <strong> Elementleri
+<b>: Kalın metin tanımlar, ancak ekstra bir önem taşımaz.
+Örnek:
+html
+Kopyala
+Düzenle
+<b>Bu metin kalın</b>
+<strong>: Önemli metin tanımlar ve genellikle kalın görüntülenir.
+Örnek:
+html
+Kopyala
+Düzenle
+<strong>Bu metin önemlidir!</strong>
+HTML <i> ve <em> Elementleri
+<i>: Alternatif bir ses tonu veya ruh hali için bir metin parçasını tanımlar. Genellikle italik olarak görüntülenir.
+    Kullanım: Teknik terimler, yabancı dilde ifadeler, gemi isimleri, düşünceler vb.
+-->
+  <i>Bu metin italik</i>
+  <!--
+<em>: Vurgulanmış metin tanımlar ve genellikle italik olarak görüntülenir.
+İpucu: Ekran okuyucular, <em> içindeki kelimeleri vurgu ile okur.
+-->
+  <em>Bu metin vurgulandı</em>
+
+  <!--
+HTML <small> Elementi
+Daha küçük bir metni tanımlar.
+Örnek:
+-->
+  <small>Bu daha küçük bir metindir.</small>
+
+  <!--
+HTML <mark> Elementi
+İşaretlenmiş veya vurgulanmış bir metni tanımlar.
+Örnek:
+-->
+  <p>Bugün <mark>süt</mark> almayı unutma.</p>
+
+  <!--
+HTML <del> ve <ins> Elementleri
+<del>: Bir belgede silinmiş metni tanımlar. Tarayıcılar genellikle silinmiş metni üstü çizili olarak görüntüler.
+<ins>: Bir belgede eklenmiş metni tanımlar. Tarayıcılar genellikle eklenmiş metni altı çizili olarak görüntüler.
+    -->
+  <p>En sevdiğim renk <del>mavi</del> kırmızı.</p>
+  <p>En sevdiğim renk <del>mavi</del> <ins>kırmızı</ins>.</p>
+
+  <!--
+HTML <sub> ve <sup> Elementleri
+<sub>: Alt simge metin tanımlar. Metin, normal çizginin yarım karakter altında görünür ve genellikle daha küçük bir yazı tipinde görüntülenir.
+    Kullanım: Kimyasal formüller (ör. H₂O).
+
+<sup>: Üst simge metin tanımlar. Metin, normal çizginin yarım karakter üzerinde görünür ve genellikle daha küçük bir yazı tipinde görüntülenir.
+-->
+
+  <p>Bu <sub>alt simgeli</sub> bir metindir.</p>
+
+  <!--
+HTML Alıntı ve Atıf Elementleri
+Bu bölümde <blockquote>, <q>, <abbr>, <address>, <cite> ve <bdo> HTML elementlerini inceleyeceğiz.
+-->
+
+  <!--
+HTML <blockquote> (Uzun Alıntılar)
+<blockquote> etiketi, başka bir kaynaktan alıntılanmış bir bölümü tanımlar.
+Tarayıcılar genellikle bu tür alıntıları girintili olarak gösterir.
+
+-->
+  <p>İşte WWF'nin web sitesinden bir alıntı:</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    60 yıldır WWF, insanlara ve doğaya yardımcı olmak için çalışıyor...
+  </blockquote>
+
+  <!--
+HTML <q> (Kısa Alıntılar)
+<q> etiketi, kısa bir alıntıyı tanımlar.
+Tarayıcılar genellikle alıntının etrafına tırnak işaretleri ekler.
+-->
+  <p>WWF'nin hedefi: <q>İnsanların doğayla uyum içinde yaşadığı bir gelecek inşa etmek.</q></p>
+
+  <!--
+HTML <abbr> (Kısaltmalar)
+<abbr> etiketi, bir kısaltma veya akronimi tanımlar (ör. "HTML", "CSS", "Dr.", "ASAP").
+Tarayıcılar, çeviri sistemleri ve arama motorları için faydalı bilgiler sağlar.
+title attribute kullanılarak kısaltmanın açıklaması gösterilebilir.
+-->
+  <p><abbr title="World Health Organization">WHO</abbr>, 1948'de kurulmuştur.</p>
+
+  <!--
+HTML <address> (İletişim Bilgisi)
+<address> etiketi, bir belge veya makale için yazarın/sahibin iletişim bilgilerini tanımlar.
+İletişim bilgileri: e-posta adresi, URL, fiziksel adres, telefon numarası vb. olabilir.
+Bu etiket içindeki metin genellikle italik olarak görüntülenir ve öncesinde/sonrasında satır sonu eklenir.
+-->
+  <address>
+    Yazan: John Doe.<br>
+    Bizi ziyaret edin:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+  </address>
+
+
+  <!--
+HTML <cite> (Eser Başlığı)
+<cite> etiketi, bir yaratıcı eserin başlığını tanımlar (ör. kitap, şiir, şarkı, film, resim).
+Tarayıcılar, bu etiketi genellikle italik olarak görüntüler.
+Not: Bir kişinin adı, bir eser başlığı olarak kabul edilmez.
+-->
+  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+  <!--
+HTML <bdo> (Çift Yönlü Yazı Kontrolü)
+<bdo> etiketi, mevcut metin yönünü değiştirmek için kullanılır.
+"BDO" terimi, "Bi-Directional Override" (Çift Yönlü Yazı Kontrolü) anlamına gelir.
+-->
+  <bdo dir="rtl">Bu metin sağdan sola yazılacak</bdo>
+
+  <!--
+Özet:
+<blockquote>: Uzun alıntılar için kullanılır ve genellikle girintili gösterilir.
+<q>: Kısa alıntılar için kullanılır ve tırnak işaretleri ekler.
+<abbr>: Kısaltmaları tanımlar, title attribute ile açıklama eklenebilir.
+<address>: İletişim bilgilerini tanımlar, italik olarak gösterilir.
+<cite>: Bir yaratıcı eserin başlığını tanımlar, italik olarak gösterilir.
+<bdo>: Metin yönünü değiştirmek için kullanılır
+-->
+
+  <!--
+Özet:
+HTML yorumları 
+Yorumlar tarayıcıda görüntülenmez, ancak kaynak kodu belgelemek için faydalıdır.
+Yorumlar, geçici olarak içerik gizlemek veya hata ayıklamak için kullanılabilir.
+Satır içi veya çok satırlı yorumlar kullanılabilir.
+-->
+
+
+  <!--
+HTML Renkler
+HTML renkleri, önceden tanımlanmış renk isimleri veya RGB, HEX, HSL, RGBA, ve HSLA değerleri ile belirtilebilir.
+
+Renk İsimleri
+HTML, 140 standart renk ismini destekler. Örnek:
+Tomato, Orange, DodgerBlue, Violet, LightGray
+
+Arka Plan Rengi (Background Color)
+Bir elementin arka plan rengi ayarlanabilir:
+
+-->
+  <h1 style="background-color:DodgerBlue;">Merhaba Dünya</h1>
+  <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+  <!--
+Metin Rengi (Text Color)
+Metin rengi color özelliği ile ayarlanabilir:
+-->
+  <h1 style="color:Tomato;">Merhaba Dünya</h1>
+  <p style="color:DodgerBlue;">Lorem ipsum...</p>
+
+  <!--
+Çerçeve Rengi (Border Color)
+Çerçeve rengi border özelliği ile belirlenebilir:
+-->
+  <h1 style="border:2px solid Tomato;">Merhaba Dünya</h1>
+
+  <!--
+Renk Değerleri
+Renkler RGB, HEX, HSL, RGBA, ve HSLA değerleriyle tanımlanabilir.
+
+1. RGB Renk Değerleri
+rgb(red, green, blue) formatında yazılır. Her değer 0-255 arasıdır.
+Örnekler:
+rgb(255, 0, 0) → Kırmızı
+rgb(0, 255, 0) → Yeşil
+rgb(0, 0, 255) → Mavi
+
+2. RGBA Renk Değerleri
+rgba(red, green, blue, alpha) formatında yazılır.
+alpha: 0.0 (şeffaf) ile 1.0 (tamamen opak) arasında bir değerdir.
+Örnekler:
+rgba(255, 99, 71, 0.5) → %50 şeffaf kırmızı
+rgba(0, 255, 0, 1) → Tam opak yeşil
+
+
+3. HEX Renk Değerleri
+#RRGGBB formatında yazılır. RR, GG, BB değerleri 00-FF arasında olabilir.
+Örnekler:
+#ff0000 → Kırmızı
+#00ff00 → Yeşil
+#0000ff → Mavi
+
+4. HSL Renk Değerleri
+hsl(hue, saturation, lightness) formatında yazılır.
+Hue: Renk tekerleği üzerindeki derece (0-360).
+0 → Kırmızı, 120 → Yeşil, 240 → Mavi
+Saturation: Renk yoğunluğu (%).
+0% → Gri tonları, 100% → Tam renk
+Lightness: Renk parlaklığı (%).
+0% → Siyah, 50% → Normal, 100% → Beyaz
+
+
+HTML Renkler
+HTML renkleri, önceden tanımlanmış renk isimleri veya RGB, HEX, HSL, RGBA, ve HSLA değerleri ile belirtilebilir.
+
+Renk İsimleri
+HTML, 140 standart renk ismini destekler. Örnek:
+Tomato, Orange, DodgerBlue, Violet, LightGray
+
+Arka Plan Rengi (Background Color)
+Bir elementin arka plan rengi ayarlanabilir:
+
+html
+Kopyala
+Düzenle
+<h1 style="background-color:DodgerBlue;">Merhaba Dünya</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+Metin Rengi (Text Color)
+Metin rengi color özelliği ile ayarlanabilir:
+
+html
+Kopyala
+Düzenle
+<h1 style="color:Tomato;">Merhaba Dünya</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+Çerçeve Rengi (Border Color)
+Çerçeve rengi border özelliği ile belirlenebilir:
+
+html
+Kopyala
+Düzenle
+<h1 style="border:2px solid Tomato;">Merhaba Dünya</h1>
+Renk Değerleri
+Renkler RGB, HEX, HSL, RGBA, ve HSLA değerleriyle tanımlanabilir.
+
+Özet:
+HTML renkleri isimler veya RGB, HEX, HSL, RGBA, HSLA değerleriyle tanımlanabilir.
+RGB ve RGBA: Kırmızı, yeşil, mavi renk bileşenleriyle çalışır, alpha ile şeffaflık eklenebilir.
+HEX: Renkler 16'lık sayı sisteminde ifade edilir.
+HSL ve HSLA: Renk tonu, yoğunluk ve parlaklık değerleri kullanılır, alpha ile şeffaflık eklenebilir.
+Gri tonlar, eşit renk değerleriyle tanımlanır.
+-->
+
+  <!--
+HTML Stilleri - CSS
+CSS Nedir?
+
+CSS, Cascading Style Sheets'in kısaltmasıdır.
+Bir web sitesinin görünümünü ve düzenini formatlamak için kullanılır.
+Renk, yazı tipi, boyut, arka plan, düzen gibi birçok özelliği kontrol edebilirsiniz.
+Cascading (Katmanlı): Bir elemente uygulanan stil, o elementin tüm çocuklarına da uygulanır (aksi belirtilmedikçe).
+-->
+
+  <!--
+CSS Nasıl Kullanılır?
+CSS, HTML belgelerine üç farklı şekilde eklenebilir:
+
+Inline CSS: style attribute ile doğrudan HTML elementine eklenir.
+
+-->
+  <h1 style="color:blue;">Mavi Başlık</h1>
+  <p style="color:red;">Kırmızı Paragraf</p>
+  <!--
+internal CSS: <style> etiketi içinde, <head> bölümünde tanımlanır.
+-->
+  <style>
+    body {
+      background-color: powderblue;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+  <!--
+External CSS: Birden fazla HTML sayfasına uygulanabilecek harici bir CSS dosyası kullanılır.
+
+
+-->
+  <link rel="stylesheet" href="styles.css">
+  <!--
+padding: Metin ile çerçeve arasındaki boşluğu tanımlar.
+margin: Çerçevenin dışındaki boşluğu tanımlar.
+
+Harici CSS Dosyasını Bağlamak
+Harici bir CSS dosyası tam URL, göreceli yol veya aynı klasörde bulunan bir dosya ile bağlanabilir.
+<link rel="stylesheet" href="https://www.example.com/styles.css">
+
+Örnek:
+
+Tam URL:
+<link rel="stylesheet" href="https://www.example.com/styles.css">
+Göreceli Yol:
+<link rel="stylesheet" href="/css/styles.css">
+Aynı Klasör:
+<link rel="stylesheet" href="styles.css">
+-->
+  <!--
+
+HTML Stilleri - CSS
+CSS Nedir?
+
+CSS, Cascading Style Sheets'in kısaltmasıdır.
+Bir web sitesinin görünümünü ve düzenini formatlamak için kullanılır.
+Renk, yazı tipi, boyut, arka plan, düzen gibi birçok özelliği kontrol edebilirsiniz.
+Cascading (Katmanlı): Bir elemente uygulanan stil, o elementin tüm çocuklarına da uygulanır (aksi belirtilmedikçe).
+CSS Nasıl Kullanılır?
+CSS, HTML belgelerine üç farklı şekilde eklenebilir:
+
+Inline CSS: style attribute ile doğrudan HTML elementine eklenir.
+
+html
+Kopyala
+Düzenle
+<h1 style="color:blue;">Mavi Başlık</h1>
+<p style="color:red;">Kırmızı Paragraf</p>
+Internal CSS: <style> etiketi içinde, <head> bölümünde tanımlanır.
+
+html
+Kopyala
+Düzenle
+<style>
+body { background-color: powderblue; }
+h1 { color: blue; }
+p { color: red; }
+</style>
+External CSS: Birden fazla HTML sayfasına uygulanabilecek harici bir CSS dosyası kullanılır.
+
+HTML Kodu:
+html
+Kopyala
+Düzenle
+<link rel="stylesheet" href="styles.css">
+styles.css Dosyası:
+css
+Kopyala
+Düzenle
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+CSS ile Sık Kullanılan Özellikler
+1. Renk (Colors)
+color: Metin rengi tanımlar.
+background-color: Arka plan rengi tanımlar.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<h1 style="color:blue;">Mavi Başlık</h1>
+<p style="background-color:yellow;">Sarı Arka Plan</p>
+2. Yazı Tipleri ve Boyutlar (Fonts and Sizes)
+font-family: Yazı tipini belirtir.
+font-size: Yazı boyutunu ayarlar.
+Örnek:
+
+html
+Kopyala
+Düzenle
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+3. Çerçeve (Border)
+border: HTML elementinin etrafında bir çerçeve tanımlar.
+Örnek:
+css
+Kopyala
+Düzenle
+p {
+  border: 2px solid powderblue;
+}
+4. İç Dolgu (Padding)
+padding: Metin ile çerçeve arasındaki boşluğu tanımlar.
+Örnek:
+css
+Kopyala
+Düzenle
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+5. Dış Boşluk (Margin)
+margin: Çerçevenin dışındaki boşluğu tanımlar.
+Örnek:
+css
+Kopyala
+Düzenle
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+Harici CSS Dosyasını Bağlamak
+Harici bir CSS dosyası tam URL, göreceli yol veya aynı klasörde bulunan bir dosya ile bağlanabilir.
+Örnek:
+
+Tam URL:
+html
+Kopyala
+Düzenle
+<link rel="stylesheet" href="https://www.example.com/styles.css">
+Göreceli Yol:
+html
+Kopyala
+Düzenle
+<link rel="stylesheet" href="/css/styles.css">
+Aynı Klasör:
+html
+Kopyala
+Düzenle
+<link rel="stylesheet" href="styles.css">
+Bölüm Özeti
+Inline CSS: style attribute ile tek bir elemente özel stil uygular.
+Internal CSS: <style> etiketi ile bir sayfanın tüm elementlerini stillendirir.
+External CSS: Harici dosyalarla birden fazla sayfayı stillendirir.
+CSS Özellikleri:
+color: Metin rengi
+background-color: Arka plan rengi
+font-family: Yazı tipi
+font-size: Yazı boyutu
+border: Çerçeve
+padding: Çerçeve iç boşluğu
+margin: Çerçeve dış boşluğu
+İpucu: Harici CSS kullanarak, bir dosyada yapılan değişiklikle tüm web sitesinin görünümünü değiştirebilirsiniz.
+-->
+
+
+  <!--
+HTML Bağlantılar (Links)
+HTML'deki bağlantılar, kullanıcıların bir sayfadan diğerine geçiş yapmasına olanak tanır.
+
+HTML Bağlantılar - Hiperlinkler
+Hiperlinkler, bir belgeden diğerine atlamanızı sağlar.
+Fare bağlantının üzerine geldiğinde, imleç küçük bir el şekline dönüşür.
+Not: Bir bağlantı metin olmak zorunda değildir; bir resim veya başka bir HTML elementi de olabilir.
+
+HTML Bağlantılar - Söz Dizimi
+<a> etiketi, bir hiperlinki tanımlar:
+    href Attribute: Bağlantının gideceği adresi belirtir.
+Link Text: Kullanıcının göreceği metin.
+-->
+  <a href="url">link text</a>
+  <a href="https://www.w3schools.com/">W3Schools'u Ziyaret Edin!</a>
+
+  <!--
+Bağlantı Renkleri
+Ziyaret edilmemiş bağlantılar: Mavi ve altı çizili
+Ziyaret edilmiş bağlantılar: Mor ve altı çizili
+Aktif bağlantılar: Kırmızı ve altı çizili
+CSS ile renkler özelleştirilebilir.
+
+target Attribute
+Bağlantının açılacağı yeri belirler:
+
+_self: Aynı pencere/sekme (varsayılan).
+_blank: Yeni pencere/sekme.
+_parent: Üst çerçeve.
+_top: Tüm pencere.
+
+
+-->
+
+  <a href="https://www.w3schools.com/" target="_blank">Yeni Sekmede Aç</a>
+
+  <!--
+Mutlak ve Göreceli URL'ler
+Mutlak URL: Tam web adresi içerir.
+
+-->
+  <a href="https://www.google.com/">Google</a>
+
+  <!--
+Göreceli URL: Aynı sitedeki bir sayfaya bağlantı içerir.
+-->
+  <a href="about.html">Hakkımızda</a>
+
+  <!--
+Bir Resmi Bağlantı Olarak Kullanma
+Bir resmi bağlantı yapmak için <img> etiketini <a> etiketi içine koyabilirsiniz.
+-->
+  <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+  </a>
+
+  <!--
+Bir E-posta Adresine Bağlantı
+mailto: kullanarak bir bağlantı oluşturabilirsiniz.
+Örnek:
+-->
+  <a href="mailto:someone@example.com">E-posta Gönder</a>
+
+  <!--
+
+Buton Olarak Bağlantı
+Bir HTML butonunu bağlantı yapmak için JavaScript kullanabilirsiniz.
+-->
+
+  <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+  <!--
+Bağlantı Başlıkları
+title attribute, fare bağlantının üzerine geldiğinde balon ipucu (tooltip) olarak ekstra bilgi gösterir.
+-->
+  <a href="https://www.w3schools.com/html/" title="HTML Bölümüne Git">HTML Eğitimini Ziyaret Edin</a>
+
+  <!--
+Bağlantı Durumlarına Göre CSS
+Bağlantılar farklı durumlara göre CSS ile özelleştirilebilir:
+
+:link: Ziyaret edilmemiş bağlantılar.
+:visited: Ziyaret edilmiş bağlantılar.
+:hover: Fare ile üzerine gelinen bağlantılar.
+:active: Tıklanan bağlantılar.
+-->
+
+  <!--
+HTML Bağlantılar - Yer İmleri (Bookmarks)
+Yer imleri, bir web sayfasındaki belirli bir bölüme hızlıca atlamak için kullanılır.
+
+Bir Yer İmi Oluşturmak
+
+Yer imi tanımlayın:
+-->
+  <h2 id="C4">Bölüm 4</h2>
+  <!--
+Bağlantı ekleyin:
+-->
+  <a href="#C4">Bölüm 4'e Git</a>
+
+  <!--
+Başka bir sayfadaki yer imine bağlantı:
+-->
+  <a href="otherpage.html#C4">Bölüm 4'e Gittttt</a>
+
+  <!--
+Bölüm Özeti
+<a> Etiketi: Hiperlinkleri tanımlar.
+href Attribute: Bağlantının gideceği adresi belirtir.
+target Attribute: Bağlantının açılacağı yeri tanımlar.
+Resimleri veya butonları bağlantı olarak kullanabilirsiniz.
+Yer imleri ile bir sayfa içinde hızlı gezinme sağlayabilirsiniz.
+Bağlantı renkleri ve stilleri CSS ile özelleştirilebilir.
+-->
+
+  <!--
+HTML Görseller (Images)
+HTML görseller, bir web sayfasının tasarımını ve görünümünü geliştirmek için kullanılır.
+
+HTML Görsel Söz Dizimi
+<img> etiketi, web sayfasına görsel eklemek için kullanılır.
+<img> etiketi boş bir etikettir, yani yalnızca attribute'lar içerir, bitiş etiketi yoktur.
+Zorunlu Attribute'lar:
+src: Görselin URL'sini belirtir.
+alt: Görsel görüntülenemezse alternatif metin sağlar.
+-->
+  <img src="img_girl.jpg" alt="Bir kız resmi">
+
+  <!--
+
+HTML Görseller (Images)
+HTML görseller, bir web sayfasının tasarımını ve görünümünü geliştirmek için kullanılır.
+
+HTML Görsel Söz Dizimi
+<img> etiketi, web sayfasına görsel eklemek için kullanılır.
+<img> etiketi boş bir etikettir, yani yalnızca attribute'lar içerir, bitiş etiketi yoktur.
+Zorunlu Attribute'lar:
+src: Görselin URL'sini belirtir.
+alt: Görsel görüntülenemezse alternatif metin sağlar.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<img src="img_girl.jpg" alt="Bir kız resmi">
+Görsel Boyutları (Width ve Height)
+Görsel boyutlarını ayarlamak için:
+Inline CSS: style attribute kullanılır
+
+Attribute'lar: width ve height attribute'ları kullanılabilir.
+html
+Kopyala
+Düzenle
+
+Not: Görselin yükleme sırasında "yanıp sönmesini" önlemek için boyutlar belirtilmelidir.
+
+-->
+
+  <img src="img_girl.jpg" alt="Bir kız resmi" style="width:500px;height:600px;">
+  <img src="img_girl.jpg" alt="Bir kız resmi" width="500" height="600">
+
+  <!--
+Dış ve Yerel Görseller
+Yerel Görseller: Aynı klasörde ya da bir alt klasörde barındırılır.
+Dış Görseller: Tam URL ile belirtilir.
+Not: Dış görseller telif hakkı ihlallerine neden olabilir ve kontrol edilemez (örneğin, kaldırılabilir).
+Hareketli Görseller (GIF)
+HTML, hareketli GIF'leri destekler:
+
+Görseli Bağlantı Olarak Kullanma
+Bir görseli bağlantı yapmak için <a> etiketi içine koyabilirsiniz:
+-->
+  <img src="images/photo.jpg" alt="Resim">
+  <img src="https://www.example.com/photo.jpg" alt="Dış Resim">
+  <img src="animation.gif" alt="Animasyon">
+  <a href="page.html">
+    <img src="smiley.gif" alt="Gülümseme" style="width:42px;height:42px;">
+  </a>
+
+  <!--
+Görselin Konumlandırılması
+CSS float özelliği ile görselin sağa veya sola yaslanması sağlanabilir.
+
+-->
+  <p><img src="smiley.gif" alt="Gülümseme" style="float:right;width:42px;height:42px;">Bu bir paragraftır.</p>
+
+  <!--
+HTML Görsel Haritaları (Image Maps)
+<map> Etiketi: Görsel üzerinde tıklanabilir alanlar tanımlar.
+<area> Etiketi: Tıklanabilir alanın şekil ve koordinatlarını belirtir.
+Şekiller: rect (dikdörtgen), circle (daire), poly (çokgen).
+-->
+  <img src="workplace.jpg" alt="Çalışma Alanı" usemap="#workmap">
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Bilgisayar" href="computer.htm">
+    <area shape="circle" coords="337,300,44" alt="Kahve" href="coffee.htm">
+  </map>
+  <!--
+
+HTML Görseller (Images)
+HTML görseller, bir web sayfasının tasarımını ve görünümünü geliştirmek için kullanılır.
+
+HTML Görsel Söz Dizimi
+<img> etiketi, web sayfasına görsel eklemek için kullanılır.
+<img> etiketi boş bir etikettir, yani yalnızca attribute'lar içerir, bitiş etiketi yoktur.
+Zorunlu Attribute'lar:
+src: Görselin URL'sini belirtir.
+alt: Görsel görüntülenemezse alternatif metin sağlar.
+Örnek:
+
+html
+Kopyala
+Düzenle
+<img src="img_girl.jpg" alt="Bir kız resmi">
+Görsel Boyutları (Width ve Height)
+Görsel boyutlarını ayarlamak için:
+Inline CSS: style attribute kullanılır.
+html
+Kopyala
+Düzenle
+<img src="img_girl.jpg" alt="Bir kız resmi" style="width:500px;height:600px;">
+Attribute'lar: width ve height attribute'ları kullanılabilir.
+html
+Kopyala
+Düzenle
+<img src="img_girl.jpg" alt="Bir kız resmi" width="500" height="600">
+Not: Görselin yükleme sırasında "yanıp sönmesini" önlemek için boyutlar belirtilmelidir.
+Dış ve Yerel Görseller
+Yerel Görseller: Aynı klasörde ya da bir alt klasörde barındırılır.
+html
+Kopyala
+Düzenle
+<img src="images/photo.jpg" alt="Resim">
+Dış Görseller: Tam URL ile belirtilir.
+html
+Kopyala
+Düzenle
+<img src="https://www.example.com/photo.jpg" alt="Dış Resim">
+Not: Dış görseller telif hakkı ihlallerine neden olabilir ve kontrol edilemez (örneğin, kaldırılabilir).
+Hareketli Görseller (GIF)
+HTML, hareketli GIF'leri destekler:
+
+html
+Kopyala
+Düzenle
+<img src="animation.gif" alt="Animasyon">
+Görseli Bağlantı Olarak Kullanma
+Bir görseli bağlantı yapmak için <a> etiketi içine koyabilirsiniz:
+
+html
+Kopyala
+Düzenle
+<a href="page.html">
+  <img src="smiley.gif" alt="Gülümseme" style="width:42px;height:42px;">
+</a>
+Görselin Konumlandırılması
+CSS float özelliği ile görselin sağa veya sola yaslanması sağlanabilir.
+Örnek:
+html
+Kopyala
+Düzenle
+<p><img src="smiley.gif" alt="Gülümseme" style="float:right;width:42px;height:42px;">Bu bir paragraftır.</p>
+HTML Görsel Haritaları (Image Maps)
+<map> Etiketi: Görsel üzerinde tıklanabilir alanlar tanımlar.
+<area> Etiketi: Tıklanabilir alanın şekil ve koordinatlarını belirtir.
+Şekiller: rect (dikdörtgen), circle (daire), poly (çokgen).
+Örnek:
+
+html
+Kopyala
+Düzenle
+<img src="workplace.jpg" alt="Çalışma Alanı" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Bilgisayar" href="computer.htm">
+  <area shape="circle" coords="337,300,44" alt="Kahve" href="coffee.htm">
+</map>
+HTML Arka Plan Görselleri (Background Images)
+CSS background-image özelliği ile arka plan görseli ayarlanabilir.
+-->
+  <style>
+    body {
+      background-image: url('img_girl.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <!--
+HTML <picture> Etiketi
+Esneklik: Farklı cihazlara veya ekran boyutlarına uygun görseller göstermek için kullanılır.
+<picture> etiketi içinde bir veya daha fazla <source> etiketi bulunur.
+
+    Kullanım Amacı:
+Bant Genişliği: Küçük cihazlar için büyük dosyaların yüklenmesini önler.
+Format Desteği: Tarayıcı veya cihazlar arasında format uyumluluğunu sağlar.
+-->
+  <picture>
+    <source media="(min-width: 650px)" srcset="large.jpg">
+    <source media="(min-width: 465px)" srcset="medium.jpg">
+    <img src="small.jpg" alt="Resim">
+  </picture>
+  <!--
+Özet
+Görseller <img> etiketi ile tanımlanır.
+src attribute ile görselin yolunu belirtin.
+alt attribute, görsel yüklenemediğinde alternatif metin sağlar.
+Görsel boyutları için width ve height veya CSS kullanılabilir.
+Görseller bağlantı veya arka plan olarak kullanılabilir.
+<map> ve <area> etiketleri ile görseller üzerinde tıklanabilir alanlar oluşturabilirsiniz.
+<picture> etiketi, farklı ekranlar ve cihazlar için uygun görseller sunar.
+-->
+
+  <!--
+HTML Favicon
+Favicon Nedir?
+
+Favicon, tarayıcı sekmesinde sayfa başlığının solunda gösterilen küçük bir görseldir.
+Genellikle basit ve yüksek kontrastlı bir görsel kullanılır.
+
+HTML'de Favicon Nasıl Eklenir?
+Favicon Görselini Hazırlayın:
+
+Boyut: Küçük ve basit bir görsel kullanın.
+Format: Favicon genellikle favicon.ico adıyla kaydedilir.
+Konum: Web sunucusunun kök dizinine veya bir images klasörüne kaydedin.
+<link> Etiketi ile Ekleme:
+
+Favicon'u eklemek için HTML dosyasındaki <head> etiketi içine bir <link> etiketi ekleyin.
+
+    Favicon'u Görüntüleme:
+
+Dosyayı kaydedin ve tarayıcıda yeniden yükleyin.
+Favicon, tarayıcı sekmesinde sayfa başlığının solunda görünmelidir.
+Desteklenen Favicon Formatları
+Tüm modern tarayıcılar aşağıdaki dosya formatlarını destekler:
+
+ICO
+PNG
+GIF
+JPEG
+SVG
+Not: Favicon, sitenizin profesyonel ve tanınabilir görünmesini sağlar.
+-->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <!--
+HTML Sayfa Başlığı (Page Title)
+Sayfa Başlığı Nedir?
+
+Her web sayfası, sayfanın anlamını açıklayan bir başlığa sahip olmalıdır.
+Başlık, tarayıcı başlık çubuğunda görüntülenir ve SEO (Arama Motoru Optimizasyonu) için önemlidir.
+
+HTML <title> Etiketi
+<title> etiketi, bir web sayfasına başlık eklemek için kullanılır.
+
+    Başlık Nerede Görünür?
+Tarayıcı Başlık Çubuğunda: Tarayıcının üst kısmında.
+Favorilere Eklendiğinde: Sayfa favorilere eklendiğinde.
+Arama Motoru Sonuçlarında: Başlık, arama motorlarında sayfanın adı olarak gösterilir.
+
+İyi Bir Başlık Nasıl Olmalı?
+Açıklayıcı: Sayfanın içeriğini ve anlamını net bir şekilde tanımlar.
+SEO Uyumlu: Arama motoru algoritmaları için optimize edilmiştir.
+Kısa ve Anlamlı: Gereksiz detaylardan kaçının, net olun.
+
+HTML <title> Etiketi Özeti
+<title> etiketi, belgenin başlığını tanımlar.
+Başlık, tarayıcı çubuğunda, favorilerde ve arama motoru sonuçlarında gösterilir.
+SEO İpucu: Başlığı mümkün olduğunca anlamlı ve alakalı yapmaya çalışın.
+-->
+  <title>Sayfa Başlığı</title>
+
+  <!--
+### **HTML Tabloları (Tables)**
+
+HTML tablolar, verilerin satırlar ve sütunlar halinde düzenlenmesini sağlar. 
+
+---
+
+### **Tablo Tanımı**
+- `<table>`: Tabloyu tanımlar.  
+- `<tr>`: Bir tablo satırını tanımlar.  
+- `<td>`: Bir tablo hücresini tanımlar (veri hücresi).  
+- `<th>`: Tablo başlık hücresini tanımlar (genellikle kalın ve ortalıdır).  
+
+**Örnek Basit Tablo:**  
+```html
+<table>
+  <tr>
+    <th>Şirket</th>
+    <th>İletişim</th>
+    <th>Ülke</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Almanya</td>
+  </tr>
+</table>
+```
+
+---
+
+### **Tablo Özellikleri**
+
+#### **Hücreler ve Satırlar**
+- **Hücreler (`<td>`):** İçine metin, resim, liste, bağlantı gibi HTML elementleri eklenebilir.  
+- **Satırlar (`<tr>`):** Her bir satır birden fazla hücre içerebilir.  
+  **Örnek:**  
+  ```html
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  ```
+
+#### **Başlık Hücreleri**
+- `<th>` etiketi ile tablo başlıkları tanımlanır.  
+- Varsayılan olarak kalın ve ortalıdır, CSS ile düzenlenebilir.  
+
+---
+
+### **Tablo Kenarlıkları**
+- CSS ile tabloya ve hücrelere kenarlık eklenebilir:  
+  ```css
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /* Çift kenarlıkları önler */
+  }
+  ```
+- **Yuvarlatılmış Kenarlıklar:**  
+  ```css
+  th, td {
+    border-radius: 10px;
+  }
+  ```
+- **Kenarlık Stilleri:**  
+  - Dotted, dashed, solid, double, groove, ridge, inset, outset gibi değerler alabilir.  
+
+---
+
+### **Boyutlandırma**
+- Tablo, satır veya sütun boyutları **`width`** ve **`height`** ile ayarlanabilir:  
+  ```html
+  <table style="width:100%">
+    <tr>
+      <th style="width:70%">Ad</th>
+      <th>Yaş</th>
+    </tr>
+  </table>
+  ```
+
+---
+
+### **Kolspan ve Rowspan**
+- **Colspan:** Bir hücreyi birden fazla sütun boyunca genişletir.  
+  ```html
+  <th colspan="2">Ad Soyad</th>
+  ```
+- **Rowspan:** Bir hücreyi birden fazla satır boyunca genişletir.  
+  ```html
+  <th rowspan="2">Telefon</th>
+  ```
+
+---
+
+### **Tablo Başlıkları**
+- **Yatay Başlıklar:** `<th>` etiketi ile tanımlanır.  
+- **Dikey Başlıklar:** İlk sütundaki hücreler `<th>` etiketi ile tanımlanabilir.  
+- **Birden Fazla Sütunu Kapsayan Başlık:** `colspan` attribute ile yapılır.  
+
+---
+
+### **Tablo Stil Çeşitleri**
+
+#### **Zebra Şeritleri**
+- Her bir satırı farklı renklendirerek daha okunabilir hale getirir:  
+  ```css
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  ```
+
+#### **Üzerine Gelindiğinde Renk Değişimi**
+- Fareyle bir satırın üzerine gelindiğinde:  
+  ```css
+  tr:hover {
+    background-color: #D6EEEE;
+  }
+  ```
+
+#### **Yatay ve Dikey Şeritler**
+- Hem yatay hem de dikey çizgiler oluşturulabilir:  
+  ```css
+  td:nth-child(even), th:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  ```
+
+---
+
+### **Tablo Başlığı (Caption)**
+- Tablo için bir genel başlık tanımlar:  
+  ```html
+  <table>
+    <caption>Aylık Tasarruf</caption>
+    <tr>
+      <th>Ay</th>
+      <th>Tasarruf</th>
+    </tr>
+  </table>
+  ```
+
+---
+
+### **Boşluklar ve Dolgular**
+
+#### **Hücre Dolgusu (Padding)**
+- Hücre içeriği ile kenarları arasındaki boşluğu ayarlar:  
+  ```css
+  th, td {
+    padding: 15px;
+  }
+  ```
+
+#### **Hücreler Arası Boşluk (Spacing)**
+- Hücreler arasındaki boşluğu ayarlar:  
+  ```css
+  table {
+    border-spacing: 30px;
+  }
+  ```
+
+---
+
+### **Colgroup ile Sütun Stili**
+- Belirli sütunlara stil uygulamak için `<colgroup>` ve `<col>` etiketleri kullanılır.  
+- **Örnek:**  
+  ```html
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="1" style="visibility: collapse">
+  </colgroup>
+  ```
+
+---
+
+### **Özet**
+1. **Tablo Etiketleri:**
+   - `<table>`, `<tr>`, `<td>`, `<th>`, `<caption>`, `<colgroup>`, `<col>`.
+2. **Özellikler:**
+   - Kenarlıklar, zebra şeritler, boyutlandırma, colspan, rowspan.
+3. **CSS ile Özelleştirme:**
+   - Kenarlık, arka plan renkleri, fareyle üzerine gelme efektleri.  
+4. **Gelişmiş Yapılar:**
+   - **Colgroup:** Belirli sütunlara özel stiller.  
+   - **Caption:** Tablonun başlığı.  
+   - **Hover:** Etkileşimli efektler.
+-->
+  <table>
+    <tr>
+      <th>Şirket</th>
+      <th>İletişim</th>
+      <th>Ülke</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Almanya</td>
+    </tr>
+  </table>
+
+
+  <!--
+HTML listesini özetleyen bu içerik, HTML'deki farklı liste türlerini ve bunların nasıl oluşturulacağını açıklıyor. İşte çevirisi ve özeti:
+
+---
+
+### **Çeviri ve Özet**
+HTML, geliştiricilere ilişkili öğeleri gruplamak için **listeler** oluşturma imkanı sağlar. HTML'de üç temel liste türü bulunur:
+
+#### **1. Sırasız (Unordered) Listeler**
+- `<ul>` etiketi ile başlar, her madde `<li>` etiketi ile tanımlanır.
+- Liste öğeleri varsayılan olarak siyah yuvarlak işaretlerle görüntülenir.
+- CSS **`list-style-type`** özelliği kullanılarak işaret şekilleri değiştirilebilir: disk (varsayılan), daire, kare veya işaretsiz.
+
+#### **2. Sıralı (Ordered) Listeler**
+- `<ol>` etiketi ile başlar, her madde `<li>` etiketi ile tanımlanır.
+- Liste öğeleri varsayılan olarak numaralandırılır.
+- **`type`** özelliği ile liste numaralandırma türü (ör. sayılar, büyük/küçük harfler, Roma rakamları) belirlenebilir.
+- **`start`** özelliği, listeyi belirli bir numaradan başlatmak için kullanılır.
+
+#### **3. Açıklama (Description) Listeleri**
+- `<dl>` etiketi ile tanımlanır.
+  - `<dt>`: Tanımı yapılan terim.
+  - `<dd>`: Terimin açıklaması.
+
+#### **Liste Özellikleri ve Ek Notlar**
+- Listeler iç içe yerleştirilebilir (nested lists).
+- Liste öğeleri yalnızca metin değil, resim, bağlantı gibi diğer HTML öğelerini de içerebilir.
+- CSS ile yatay menü gibi farklı listeler oluşturulabilir.
+
+---
+
+### **Örnekler**
+1. **Sırasız Liste (Yuvarlak İşaret):**
+```html
+<ul>
+  <li>Kahve</li>
+  <li>Çay</li>
+  <li>Süt</li>
+</ul>
+```
+
+2. **Sıralı Liste (Roma Rakamı):**
+```html
+<ol type="I">
+  <li>Kahve</li>
+  <li>Çay</li>
+  <li>Süt</li>
+</ol>
+```
+
+3. **Açıklama Listesi:**
+```html
+<dl>
+  <dt>Kahve</dt>
+  <dd>- siyah sıcak içecek</dd>
+  <dt>Süt</dt>
+  <dd>- beyaz soğuk içecek</dd>
+</dl>
+```
+
+---
+
+### **Sonuç**
+- `<ul>`, sırasız listeler için kullanılır.
+- `<ol>`, sıralı listeler için kullanılır ve numaralandırma türü özelleştirilebilir.
+- `<dl>`, açıklama listeleri için kullanılır.
+- CSS kullanarak listeler daha da özelleştirilebilir (örneğin yatay menü tasarımı). 
+
+HTML listeleri, içerikleri düzenli ve estetik şekilde sunmak için güçlü bir araçtır.
+-->
+  <ul>
+    <li>Kahve</li>
+    <li>Çay</li>
+    <li>Süt</li>
+  </ul>
+
+  <ol type="I">
+    <li>Kahve</li>
+    <li>Çay</li>
+    <li>Süt</li>
+  </ol>
+
+  <dl>
+    <dt>Kahve</dt>
+    <dd>- siyah sıcak içecek</dd>
+    <dt>Süt</dt>
+    <dd>- beyaz soğuk içecek</dd>
+  </dl>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML Blok ve Satır İçi (Inline) Elemanlar**
+HTML'deki her elemanın varsayılan bir görüntüleme değeri vardır. Bu değerler genellikle iki türdür: **blok (block)** ve **satır içi (inline)**.
+
+---
+
+### **1. Blok Seviyesi Elemanlar (Block-level Elements)**
+- **Yeni bir satırda başlar:** Her zaman bir sonraki satırdan başlar.
+- **Tam genişlik kaplar:** Sol ve sağdaki tüm kullanılabilir alanı doldurur.
+- **Varsayılan boşluk eklenir:** Tarayıcı, elementin öncesine ve sonrasına otomatik olarak bir boşluk (margin) ekler.
+
+**Örnek Blok Elemanlar:**
+- `<p>`: Paragraf elemanı
+- `<div>`: Bölüm veya konteyner elemanı
+
+**HTML'deki Blok Elemanlar Listesi:**
+`<address>, <article>, <aside>, <blockquote>, <canvas>, <div>, <h1> - <h6>, <section>, <table>, <ul>` gibi birçok eleman blok seviyesindedir.
+
+**Örnek:**
+```html
+<p>Merhaba Dünya</p>
+<div>Merhaba Dünya</div>
+```
+
+---
+
+### **2. Satır İçi Elemanlar (Inline Elements)**
+- **Yeni bir satırda başlamaz:** Bulunduğu satırın devamında yer alır.
+- **Genişlik:** Yalnızca içeriği kadar yer kaplar.
+- **Blok eleman içeremez:** Satır içi elemanların içine blok eleman yerleştirilemez.
+
+**Örnek Satır İçi Elemanlar:**
+- `<span>`: Metni veya dokümanın bir kısmını işaretlemek için kullanılır.
+- `<a>, <b>, <i>, <img>, <button>, <strong>` gibi elemanlar inline'dır.
+
+**Örnek:**
+```html
+<p>Bu bir <span>satır içi</span> elemandır.</p>
+```
+
+---
+
+### **3. `<div>` Elemanı**
+- **Kapsayıcı olarak kullanılır:** Diğer HTML elemanlarını grup olarak kapsamak için kullanılır.
+- **Blok seviyesi bir elemandır.**
+- **Stil uygulamak için idealdir:** CSS ile içeriği şekillendirmek için sıkça kullanılır.
+
+**Örnek:**
+```html
+<div style="background-color: black; color: white; padding: 20px;">
+  <h2>Londra</h2>
+  <p>Londra, İngiltere'nin başkentidir.</p>
+</div>
+```
+
+---
+
+### **4. `<span>` Elemanı**
+- **Satır içi kapsayıcıdır:** Metnin veya dokümanın bir bölümünü işaretlemek için kullanılır.
+- **Stil ve sınıf eklemek için kullanılır.**
+
+**Örnek:**
+```html
+<p>Annemin <span style="color:blue;">mavi</span> gözleri var.</p>
+```
+
+---
+
+### **Özet**
+1. **Blok Elemanlar:** Yeni bir satırda başlar, tam genişlik kaplar. Örnek: `<div>`, `<p>`.
+2. **Satır İçi Elemanlar:** Aynı satırda devam eder, sadece içeriği kadar genişlik kaplar. Örnek: `<span>`, `<a>`.
+3. **`<div>` Elemanı:** Blok seviyesi bir kapsayıcıdır.
+4. **`<span>` Elemanı:** Satır içi bir kapsayıcıdır ve genellikle metni biçimlendirmek için kullanılır.
+
+Bu bilgiler, HTML elemanlarının yapısını anlamak ve düzenli bir biçimde kullanmak için temel bir rehberdir.
+-->
+  <p>Merhaba Dünya</p>
+  <div>Merhaba Dünya</div>
+  <p>Bu bir <span>satır içi</span> elemandır.</p>
+  <div style="background-color: black; color: white; padding: 20px;">
+    <h2>Londra</h2>
+    <p>Londra, İngiltere'nin başkentidir.</p>
+  </div>
+  <p>Annemin <span style="color:blue;">mavi</span> gözleri var.</p>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML `<div>` Elemanı**
+`<div>` elemanı, diğer HTML elemanlarını bir arada tutmak için kullanılan bir kapsayıcıdır. Blok seviyesi bir elemandır, yani tüm kullanılabilir genişliği kaplar ve öncesinde ve sonrasında satır başı yapar.
+
+---
+
+### **1. `<div>` Elemanının Temel Özellikleri**
+- Blok seviyesi eleman olduğu için varsayılan olarak tüm genişliği kaplar.
+- Yaygın olarak grup oluşturmak ve bölümleri organize etmek için kullanılır.
+- Stil, sınıf ve id gibi ortak HTML özellikleriyle şekillendirilebilir.
+
+**Örnek:**
+```html
+<div>
+  <h2>Londra</h2>
+  <p>Londra, İngiltere'nin başkentidir.</p>
+</div>
+```
+
+---
+
+### **2. `<div>` Elemanını Ortalamak**
+Bir `<div>` elemanını merkeze almak için **CSS margin özelliği** kullanılabilir:
+```html
+<style>
+div {
+  width: 300px;
+  margin: auto;
+}
+</style>
+```
+
+---
+
+### **3. Birden Fazla `<div>` Elemanı**
+Bir sayfada birden fazla `<div>` elemanı kullanılabilir.
+```html
+<div>
+  <h2>Londra</h2>
+  <p>Londra, İngiltere'nin başkentidir.</p>
+</div>
+<div>
+  <h2>Oslo</h2>
+  <p>Oslo, Norveç'in başkentidir.</p>
+</div>
+```
+
+---
+
+### **4. `<div>` Elemanlarını Yan Yana Hizalamak**
+Birden fazla `<div>` elemanını yan yana hizalamak için çeşitli yöntemler kullanılabilir:
+
+#### **a. Float Yöntemi**
+- CSS `float` özelliği kullanılarak elemanlar yatayda hizalanabilir.
+```html
+<style>
+.mycontainer div {
+  width: 33%;
+  float: left;
+}
+</style>
+```
+
+#### **b. Inline-block Yöntemi**
+- `<div>` elemanlarının `display` özelliği **inline-block** olarak ayarlanır.
+```html
+<style>
+div {
+  width: 30%;
+  display: inline-block;
+}
+</style>
+```
+
+#### **c. Flex Yöntemi**
+- CSS Flexbox, esnek ve duyarlı düzenler oluşturmak için kullanılır.
+```html
+<style>
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width: 33%;
+}
+</style>
+```
+
+#### **d. Grid Yöntemi**
+- CSS Grid, satır ve sütun tabanlı bir düzenleme sistemidir. Flexbox'tan farklı olarak birden fazla satırı ve sütunu kolayca tanımlayabilir.
+```html
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+</style>
+```
+
+---
+
+### **Özet**
+1. **`<div>` Elemanı:** HTML içeriğini organize etmek için kullanılan blok seviyesi bir kapsayıcıdır.
+2. **Ortalamak:** CSS `margin: auto;` kullanarak ortalanabilir.
+3. **Yan Yana Hizalama Yöntemleri:**
+   - **Float:** Yatayda hizalama için kullanılır.
+   - **Inline-block:** Elemanları yan yana yerleştirir.
+   - **Flexbox:** Esnek ve duyarlı düzenler sağlar.
+   - **Grid:** Satır ve sütun tabanlı düzenleme imkanı sunar.
+
+Bu yöntemler, modern web sayfalarının daha düzenli ve etkili bir şekilde tasarlanmasını sağlar.
+-->
+  <div>
+    <h2>Londra</h2>
+    <p>Londra, İngiltere'nin başkentidir.</p>
+  </div>
+
+  <style>
+    div {
+      width: 300px;
+      margin: auto;
+    }
+  </style>
+
+  <div>
+    <h2>Londra</h2>
+    <p>Londra, İngiltere'nin başkentidir.</p>
+  </div>
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo, Norveç'in başkentidir.</p>
+  </div>
+  <div>
+    <h2>Londra</h2>
+    <p>Londra, İngiltere'nin başkentidir.</p>
+  </div>
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo, Norveç'in başkentidir.</p>
+  </div>
+  <style>
+    .mycontainer div {
+      width: 33%;
+      float: left;
+    }
+  </style>
+  <style>
+    div {
+      width: 30%;
+      display: inline-block;
+    }
+  </style>
+
+  <style>
+    div {
+      width: 30%;
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .mycontainer {
+      display: flex;
+    }
+
+    .mycontainer>div {
+      width: 33%;
+    }
+  </style>
+
+
+  <style>
+    .mycontainer {
+      display: flex;
+    }
+
+    .mycontainer>div {
+      width: 33%;
+    }
+  </style>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+  </style>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML Class Attribute (HTML Sınıf Özelliği)**
+HTML `class` özelliği, bir HTML elemanına bir veya daha fazla sınıf adı atamak için kullanılır. Birden fazla HTML elemanı aynı sınıfı paylaşabilir.
+
+---
+
+### **Sınıf Özelliğinin Kullanımı**
+- **CSS:** `class` özelliği genellikle bir stil sayfasında tanımlanan bir sınıf adına işaret eder.
+- **JavaScript:** JavaScript kullanılarak belirli bir sınıf adına sahip elemanlara erişilebilir ve bu elemanlar üzerinde işlem yapılabilir.
+
+---
+
+### **Örnek Kullanımlar**
+1. **Birden Fazla Elemanın Aynı Sınıfı Paylaşması**
+   ```html
+   <style>
+   .city {
+     background-color: tomato;
+     color: white;
+     padding: 20px;
+     margin: 20px;
+   }
+   </style>
+
+   <div class="city">
+     <h2>London</h2>
+     <p>London is the capital of England.</p>
+   </div>
+   <div class="city">
+     <h2>Paris</h2>
+     <p>Paris is the capital of France.</p>
+   </div>
+   ```
+
+2. **Farklı Elemanların Aynı Sınıfı Kullanması**
+   ```html
+   <style>
+   .city {
+     background-color: tomato;
+   }
+   </style>
+
+   <h2 class="city">Paris</h2>
+   <p class="city">Paris is the capital of France.</p>
+   ```
+
+3. **Bir Elemanın Birden Fazla Sınıfa Ait Olması**
+   ```html
+   <h2 class="city main">London</h2>
+   <h2 class="city">Paris</h2>
+   <h2 class="city">Tokyo</h2>
+   ```
+
+---
+
+### **Sınıf Adlarının JavaScript ile Kullanımı**
+JavaScript, `getElementsByClassName()` metodu ile belirli bir sınıf adına sahip elemanlara erişebilir ve bu elemanlar üzerinde işlem yapabilir.
+
+**Örnek:**
+```html
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+```
+
+Bir düğmeye tıklanarak, belirli bir sınıf adı olan tüm elemanlar gizlenir.
+
+---
+
+### **Önemli Notlar**
+- `class` adı **büyük/küçük harf duyarlıdır.**
+- **CSS ile Stiller:** `.` sembolüyle sınıf tanımlanır.
+   ```css
+   .city {
+     background-color: tomato;
+   }
+   ```
+- **Birden Fazla Sınıf:** Bir eleman birden fazla sınıfı aynı anda kullanabilir.
+- **JavaScript ile Kullanım:** `getElementsByClassName()` ile sınıf adlarına erişilebilir.
+
+---
+
+### **Bölüm Özeti**
+1. `class` özelliği, elemanlara bir veya daha fazla sınıf adı atar.
+2. Sınıflar, CSS ile stil vermek veya JavaScript ile işlem yapmak için kullanılır.
+3. `class` adı her tür HTML elemanında kullanılabilir.
+4. JavaScript, belirli bir sınıf adı ile elemanlara erişmek ve bunları manipüle etmek için kullanılabilir.
+
+Bu özellik, web sayfalarını organize etmek ve dinamik içerikler oluşturmak için çok önemlidir.
+-->
+  <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
+
+  <div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+  <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML Class Attribute (HTML Sınıf Özelliği)**
+HTML `class` özelliği, bir HTML elemanına bir veya daha fazla sınıf adı atamak için kullanılır. Birden fazla HTML elemanı aynı sınıfı paylaşabilir.
+
+---
+
+### **Sınıf Özelliğinin Kullanımı**
+- **CSS:** `class` özelliği genellikle bir stil sayfasında tanımlanan bir sınıf adına işaret eder.
+- **JavaScript:** JavaScript kullanılarak belirli bir sınıf adına sahip elemanlara erişilebilir ve bu elemanlar üzerinde işlem yapılabilir.
+
+---
+
+### **Örnek Kullanımlar**
+1. **Birden Fazla Elemanın Aynı Sınıfı Paylaşması**
+   ```html
+   <style>
+   .city {
+     background-color: tomato;
+     color: white;
+     padding: 20px;
+     margin: 20px;
+   }
+   </style>
+
+   <div class="city">
+     <h2>London</h2>
+     <p>London is the capital of England.</p>
+   </div>
+   <div class="city">
+     <h2>Paris</h2>
+     <p>Paris is the capital of France.</p>
+   </div>
+   ```
+
+2. **Farklı Elemanların Aynı Sınıfı Kullanması**
+   ```html
+   <style>
+   .city {
+     background-color: tomato;
+   }
+   </style>
+
+   <h2 class="city">Paris</h2>
+   <p class="city">Paris is the capital of France.</p>
+   ```
+
+3. **Bir Elemanın Birden Fazla Sınıfa Ait Olması**
+   ```html
+   <h2 class="city main">London</h2>
+   <h2 class="city">Paris</h2>
+   <h2 class="city">Tokyo</h2>
+   ```
+
+---
+
+### **Sınıf Adlarının JavaScript ile Kullanımı**
+JavaScript, `getElementsByClassName()` metodu ile belirli bir sınıf adına sahip elemanlara erişebilir ve bu elemanlar üzerinde işlem yapabilir.
+
+**Örnek:**
+```html
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+```
+
+Bir düğmeye tıklanarak, belirli bir sınıf adı olan tüm elemanlar gizlenir.
+
+---
+
+### **Önemli Notlar**
+- `class` adı **büyük/küçük harf duyarlıdır.**
+- **CSS ile Stiller:** `.` sembolüyle sınıf tanımlanır.
+   ```css
+   .city {
+     background-color: tomato;
+   }
+   ```
+- **Birden Fazla Sınıf:** Bir eleman birden fazla sınıfı aynı anda kullanabilir.
+- **JavaScript ile Kullanım:** `getElementsByClassName()` ile sınıf adlarına erişilebilir.
+
+---
+
+### **Bölüm Özeti**
+1. `class` özelliği, elemanlara bir veya daha fazla sınıf adı atar.
+2. Sınıflar, CSS ile stil vermek veya JavaScript ile işlem yapmak için kullanılır.
+3. `class` adı her tür HTML elemanında kullanılabilir.
+4. JavaScript, belirli bir sınıf adı ile elemanlara erişmek ve bunları manipüle etmek için kullanılabilir.
+
+Bu özellik, web sayfalarını organize etmek ve dinamik içerikler oluşturmak için çok önemlidir.
+-->
+  <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
+
+  <div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+  <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <h2 class="city main">London</h2>
+  <h2 class="city">Paris</h2>
+  <h2 class="city">Tokyo</h2>
+  <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+  </script>
+
+  .city {
+  background-color: tomato;
+  }
+
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML `id` Özelliği**
+- HTML `id` özelliği, bir HTML elemanına benzersiz bir kimlik (id) atamak için kullanılır.
+- **Bir HTML dokümanında aynı `id` birden fazla kez kullanılamaz.**
+
+---
+
+### **`id` Özelliğinin Kullanımı**
+1. **Benzersizlik:** `id` değeri doküman içinde benzersiz olmalıdır.
+2. **CSS ile Kullanım:** `id` özelliği, bir stil tanımına işaret etmek için kullanılır. CSS içinde `#` sembolü ile tanımlanır.
+3. **JavaScript ile Kullanım:** Belirli bir `id` değerine sahip elemanlara erişmek ve üzerinde işlem yapmak için kullanılır.
+
+**Örnek:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 id="myHeader">My Header</h1>
+</body>
+</html>
+```
+
+- `id` adları **büyük/küçük harf duyarlıdır**.
+- `id` adları boşluk içeremez ve bir sayı ile başlayamaz.
+
+---
+
+### **Sınıf (`class`) ile `id` Arasındaki Fark**
+- **`id`:** Bir HTML dokümanında yalnızca bir kez kullanılabilir.
+- **`class`:** Birden fazla eleman tarafından paylaşılabilir.
+
+**Örnek:**
+```html
+<style>
+#myHeader {
+  background-color: lightblue;
+}
+.city {
+  background-color: tomato;
+}
+</style>
+
+<h1 id="myHeader">My Cities</h1>
+<h2 class="city">London</h2>
+<h2 class="city">Paris</h2>
+```
+
+---
+
+### **HTML Yer İşaretleri (Bookmarks)**
+`id` özelliği, uzun bir sayfada belirli bir bölüme hızlıca geçiş yapmak için kullanılabilir.
+
+1. **Yer işareti oluşturma:**
+   ```html
+   <h2 id="C4">Chapter 4</h2>
+   ```
+
+2. **Yer işaretine bağlantı verme:**
+   - Aynı sayfadan:
+     ```html
+     <a href="#C4">Jump to Chapter 4</a>
+     ```
+   - Farklı bir sayfadan:
+     ```html
+     <a href="html_demo.html#C4">Jump to Chapter 4</a>
+     ```
+
+---
+
+### **JavaScript ile `id` Kullanımı**
+`id` özelliği, JavaScript ile elemanlara erişmek ve onları manipüle etmek için kullanılır. Bu, `getElementById()` metodu ile gerçekleştirilir.
+
+**Örnek:**
+```html
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+<h1 id="myHeader">Hello</h1>
+<button onclick="displayResult()">Click Me</button>
+```
+
+---
+
+### **Bölüm Özeti**
+1. `id` özelliği, bir HTML elemanına benzersiz bir kimlik atar.
+2. `id` değeri, CSS ve JavaScript tarafından bir elemanı seçmek veya biçimlendirmek için kullanılır.
+3. `id` özelliği ile HTML yer işaretleri oluşturulabilir.
+4. `id` değeri **case sensitive** (büyük/küçük harf duyarlı) ve benzersizdir.
+5. JavaScript, `getElementById()` yöntemiyle belirli bir `id` değerine sahip elemanlara erişebilir.
+
+Bu özellikler, web sayfalarını daha interaktif ve organize bir şekilde yapılandırmak için önemlidir.
+-->
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <style>
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="myHeader">My Header</h1>
+  </body>
+
+  </html>
+
+  <style>
+    #myHeader {
+      background-color: lightblue;
+    }
+
+    .city {
+      background-color: tomato;
+    }
+  </style>
+
+  <h1 id="myHeader">My Cities</h1>
+  <h2 class="city">London</h2>
+  <h2 class="city">Paris</h2>
+
+  <h2 id="C4">Chapter 4</h2>
+
+  <a href="#C4">Jump to Chapter 4</a>
+
+  <a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+  <script>
+    function displayResult() {
+      document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+  </script>
+  <h1 id="myHeader">Hello</h1>
+  <button onclick="displayResult()">Click Me</button>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML Iframes**
+- HTML iframe, bir web sayfası içinde başka bir web sayfasını görüntülemek için kullanılır.
+
+---
+
+### **HTML Iframe Söz Dizimi**
+- **`<iframe>` etiketi** bir satır içi (inline) çerçeve belirtir ve başka bir dokümanı mevcut HTML dokümanına gömmenizi sağlar.
+
+**Söz Dizimi:**
+```html
+<iframe src="url" title="description"></iframe>
+```
+**Not:** Erişilebilirlik için **`title`** özelliği eklemek iyi bir uygulamadır. Bu özellik, ekran okuyucuların iframe içeriğini açıklamasını sağlar.
+
+---
+
+### **Iframe - Yükseklik ve Genişlik Ayarı**
+- **`height`** ve **`width`** öznitelikleri ile iframe'in boyutları piksel cinsinden ayarlanabilir.
+
+**Örnek:**
+```html
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+```
+- Alternatif olarak, **`style`** özelliğiyle CSS kullanarak boyutlar ayarlanabilir:
+```html
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+```
+
+---
+
+### **Iframe - Kenarlığı Kaldırma**
+- Varsayılan olarak iframe'in etrafında bir kenarlık bulunur.
+- Kenarlığı kaldırmak için **`style="border:none;"`** özelliği eklenir.
+
+**Örnek:**
+```html
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+```
+
+- Kenarlık boyutu, rengi ve tarzı da CSS kullanılarak değiştirilebilir:
+```html
+<iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+```
+
+---
+
+### **Iframe - Bir Bağlantı için Hedef**
+- Bir iframe, bir bağlantı için hedef çerçeve olarak kullanılabilir.
+- Bağlantının **`target`** özelliği, iframe'in **`name`** özelliğiyle eşleşmelidir.
+
+**Örnek:**
+```html
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+```
+Bu örnekte bağlantıya tıkladığınızda, sayfa iframe içinde açılır.
+
+---
+
+### **Bölüm Özeti**
+1. **`<iframe>` etiketi**, bir satır içi çerçeve tanımlar.
+2. **`src`** özniteliği, gömülecek sayfanın URL'sini belirler.
+3. Her zaman **`title`** özniteliği ekleyerek erişilebilirliği artırın.
+4. **`height`** ve **`width`** öznitelikleri iframe'in boyutunu belirtir.
+5. **`border:none;`** kullanarak iframe'in kenarlığını kaldırabilirsiniz.
+
+Iframe, bir sayfada harici içerik (örneğin, başka bir web sitesi, belge veya harita) görüntülemek için sıkça kullanılan bir HTML özelliğidir.
+-->
+  <iframe src="url" title="description"></iframe>
+
+  <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+  <iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+  <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+  <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+  <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+  <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+  <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+  <!--
+### **Çeviri ve Özet**
+
+#### **HTML ve JavaScript**
+- JavaScript, HTML sayfalarını daha dinamik ve etkileşimli hale getirir.
+
+---
+
+### **HTML `<script>` Etiketi**
+- **`<script>` etiketi**, istemci tarafında çalışan (client-side) bir script tanımlamak için kullanılır.
+- Script, ya doğrudan etiketin içinde yazılır ya da **`src`** özelliği ile harici bir dosyaya bağlanır.
+
+**JavaScript'in Yaygın Kullanım Alanları:**
+- Görsel manipülasyon
+- Form doğrulama
+- Dinamik içerik değişiklikleri
+
+JavaScript, bir HTML öğesini seçmek için çoğunlukla **`document.getElementById()`** metodunu kullanır.
+
+**Örnek:**
+```html
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+```
+Bu kod, id'si **"demo"** olan bir HTML elementinin içeriğini "Hello JavaScript!" ile değiştirir.
+
+---
+
+### **JavaScript Neler Yapabilir?**
+**1. JavaScript İçeriği Değiştirebilir:**
+```javascript
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+```
+
+**2. JavaScript Stilleri Değiştirebilir:**
+```javascript
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+```
+
+**3. JavaScript Özellikleri Değiştirebilir:**
+```javascript
+document.getElementById("image").src = "picture.gif";
+```
+
+---
+
+### **HTML `<noscript>` Etiketi**
+- **`<noscript>` etiketi**, JavaScript'i devre dışı bırakan veya desteklemeyen tarayıcılar için alternatif bir içerik sağlar.
+
+**Örnek:**
+```html
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+```
+Bu kodda, tarayıcı JavaScript'i desteklemiyorsa "Sorry, your browser does not support JavaScript!" mesajı gösterilir.
+
+---
+
+### **Özet**
+1. **`<script>` etiketi**, JavaScript kodlarını tanımlamak için kullanılır.
+2. JavaScript ile HTML sayfalarına dinamik içerikler, görsel değişiklikler ve kullanıcı etkileşimleri eklenebilir.
+3. JavaScript öğeleri seçmek için **`document.getElementById()`** gibi metotlar kullanılır.
+4. **`<noscript>` etiketi**, JavaScript'i desteklemeyen tarayıcılara alternatif içerik sağlar.
+
+JavaScript, web sayfalarını kullanıcı odaklı, dinamik ve ilgi çekici hale getirmek için temel bir araçtır.
+-->
+
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow";
+    document.getElementById("image").src = "picture.gif";
+
+  </script>
+
+
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+  <!--
+### **Çeviri ve Özet: HTML Dosya Yolları**
+
+#### **HTML Dosya Yolları Nedir?**
+- **Dosya yolu**, bir web sitesinin klasör yapısında bir dosyanın yerini tanımlar.
+- Dosya yolları, **web sayfalarına, görüntülere, stil dosyalarına (CSS) veya JavaScript dosyalarına** bağlantı oluşturmak için kullanılır.
+
+---
+
+### **Dosya Yolu Türleri**
+
+#### **1. Örnekler**
+| **Yol** | **Açıklama** |
+|---------|--------------|
+| `<img src="picture.jpg">` | "picture.jpg" dosyası, mevcut sayfa ile aynı klasördedir. |
+| `<img src="images/picture.jpg">` | "picture.jpg" dosyası, mevcut klasördeki **images** klasöründe yer alır. |
+| `<img src="/images/picture.jpg">` | "picture.jpg" dosyası, web sitesinin kök dizinindeki **images** klasöründe yer alır. |
+| `<img src="../picture.jpg">` | "picture.jpg" dosyası, mevcut klasörden bir üst seviyedeki klasörde yer alır. |
+
+---
+
+#### **2. Mutlak (Absolute) Dosya Yolları**
+- **Tam URL**'yi içerir ve dosyanın tam konumunu gösterir.
+- Örnek:
+```html
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+```
+
+---
+
+#### **3. Göreli (Relative) Dosya Yolları**
+- Mevcut sayfaya göre dosyanın konumunu belirtir.
+  
+**Örnekler:**
+1. **Kök Dizin:** 
+   ```html
+   <img src="/images/picture.jpg" alt="Mountain">
+   ```
+   - **Açıklama:** `images` klasörü, web sitesinin kök dizinindedir.
+   
+2. **Mevcut Klasör:** 
+   ```html
+   <img src="images/picture.jpg" alt="Mountain">
+   ```
+   - **Açıklama:** `images` klasörü, mevcut klasör içindedir.
+   
+3. **Bir Üst Klasör:** 
+   ```html
+   <img src="../images/picture.jpg" alt="Mountain">
+   ```
+   - **Açıklama:** `images` klasörü, mevcut klasörden bir üst seviyedeki klasörde yer alır.
+
+---
+
+### **En İyi Uygulama**
+- **Göreli dosya yolları kullanın** (mümkünse).
+- **Neden?** 
+  - Web sayfalarınızı mevcut URL'ye bağımlı kılmadan bağlantılar oluşturabilirsiniz.
+  - Hem yerel bilgisayarda (localhost) hem de genel veya gelecekteki alan adlarında bağlantılarınız çalışır.
+
+---
+
+### **Özet**
+1. **Mutlak Yol:** Tam URL'yi kullanır.
+2. **Göreli Yol:** Mevcut sayfanın konumuna göre dosyanın yerini belirtir.
+3. **En İyi Uygulama:** Göreli yollar kullanarak bağlantılarınızı daha taşınabilir hale getirin.
+
+Bu bilgiler, web sayfanızda farklı dosya türlerini etkin bir şekilde bağlamanıza yardımcı olacaktır.
+-->
+
+  <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+  <img src="/images/picture.jpg" alt="Mountain">
+
+  <img src="images/picture.jpg" alt="Mountain">
+
+  <img src="../images/picture.jpg" alt="Mountain">
+
+  <!--
+
+  ### **HTML `<head>` Element**
+
+#### **Çeviri ve Özet**
+
+**1. `<head>` Elementi Nedir?**
+- HTML `<head>` elementi, **meta veriler (metadata)** için bir konteynırdır.
+- **Meta veri nedir?**: HTML belgesi hakkında bilgi veren, fakat ekranda gösterilmeyen verilerdir.
+- `<head>` elementi, `<html>` ve `<body>` etiketleri arasına yerleştirilir.
+
+---
+
+**2. `<head>` Elementinde Kullanılan Etiketler:**
+
+- **`<title>`:**
+  - Belgenin başlığını tanımlar.
+  - Tarayıcı sekmesinde veya favorilere eklendiğinde görünür.
+  - **SEO için önemlidir** çünkü arama motorları, başlık içeriğine göre sıralama yapar.
+  - **Örnek:**
+    ```html
+    <title>A Meaningful Page Title</title>
+    ```
+
+- **`<style>`:**
+  - Belgenin içinde stil tanımlamak için kullanılır.
+  - CSS kurallarını içerir.
+  - **Örnek:**
+    ```html
+    <style>
+      body { background-color: powderblue; }
+      h1 { color: red; }
+    </style>
+    ```
+
+- **`<link>`:**
+  - Dış stil dosyalarına bağlantı kurmak için kullanılır.
+  - **Örnek:**
+    ```html
+    <link rel="stylesheet" href="mystyle.css">
+    ```
+
+- **`<meta>`:**
+  - Belge hakkında bilgi sağlar. Örneğin:
+    - **Karakter seti tanımlama:**
+      ```html
+      <meta charset="UTF-8">
+      ```
+    - **Anahtar kelimeler:**
+      ```html
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      ```
+    - **Sayfa açıklaması:**
+      ```html
+      <meta name="description" content="Free Web tutorials">
+      ```
+    - **Görünüm (Viewport) Ayarları:** Mobil uyumluluk için:
+      ```html
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      ```
+
+- **`<script>`:**
+  - JavaScript kodlarını içerir veya dış bir JavaScript dosyasına bağlantı yapar.
+  - **Örnek:**
+    ```html
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+    </script>
+    ```
+
+- **`<base>`:**
+  - Sayfadaki tüm göreceli URL’ler için temel URL’yi ve hedefi belirtir.
+  - Belirtilen bağlantılar varsayılan olarak bu URL’yi kullanır.
+  - **Örnek:**
+    ```html
+    <base href="https://www.w3schools.com/" target="_blank">
+    ```
+
+---
+
+**3. `<meta>` ve Viewport Ayarları**
+- Mobil uyumluluk için aşağıdaki `<meta>` etiketi kullanılmalıdır:
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ```
+- **Neden önemli?**:
+  - Cihazın ekran genişliğine göre içerik düzenlenir.
+  - Daha iyi kullanıcı deneyimi sunar.
+
+---
+
+**4. Özet:**
+- `<head>` elementi, belge hakkında bilgiler içerir ancak doğrudan görüntülenmez.
+- **Ana etiketler:**
+  - `<title>`: Belgenin başlığı.
+  - `<style>`: Belge içi CSS.
+  - `<link>`: Dış stil veya kaynak dosyalarına bağlantı.
+  - `<meta>`: Karakter seti, anahtar kelimeler, açıklama, görünüm gibi ayarlar.
+  - `<script>`: JavaScript kodları veya dosyaları.
+  - `<base>`: Tüm bağlantılar için temel URL.
+  
+Bu öğeler, HTML belgesini optimize etmek, daha erişilebilir ve kullanıcı dostu hale getirmek için kullanılır.
+
+-->
+
+  <title>A Meaningful Page Title</title>
+
+  <style>
+    body {
+      background-color: powderblue;
+    }
+
+    h1 {
+      color: red;
+    }
+  </style>
+
+  <link rel="stylesheet" href="mystyle.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="description" content="Free Web tutorials">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+  </script>
+
+  <base href="https://www.w3schools.com/" target="_blank">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--
+### **HTML Layout Elements and Techniques**
+
+#### **Çeviri ve Özet**
+
+**1. HTML Düzeni ve Yapı Taşları**
+- Web siteleri genellikle içeriği birden fazla sütunda (dergi veya gazete gibi) gösterir.
+- HTML5, bir web sayfasının farklı bölümlerini tanımlayan **semantik etiketler** sunar.
+
+---
+
+**2. HTML5 Semantik Etiketler**
+- **`<header>`**: Belge veya bir bölüm için başlık tanımlar.
+- **`<nav>`**: Navigasyon bağlantılarını tanımlar.
+- **`<section>`**: Belgedeki bir bölümü tanımlar.
+- **`<article>`**: Bağımsız, kendi içinde tamamlanmış içeriği tanımlar.
+- **`<aside>`**: Ana içerikten ayrı bir içeriği tanımlar (örneğin kenar çubuğu).
+- **`<footer>`**: Belge veya bir bölüm için alt bilgi tanımlar.
+- **`<details>`**: Kullanıcının açıp kapatabileceği ek ayrıntıları tanımlar.
+- **`<summary>`**: `<details>` etiketi için bir başlık tanımlar.
+
+---
+
+**3. HTML Düzeni Oluşturma Teknikleri**
+Web sayfası düzenleri oluşturmak için kullanılan dört temel teknik vardır:
+
+1. **CSS Frameworks** (CSS Çerçeveleri):
+   - Örnek: **Bootstrap** veya **W3.CSS**.
+   - Avantaj: Hızlı ve kullanımı kolay.
+   - Dezavantaj: Çerçeveye bağımlılık.
+
+2. **CSS Float**:
+   - **Float** özelliği, öğeleri belge akışında yüzer şekilde yerleştirir.
+   - Avantaj: Öğrenmesi kolay.
+   - Dezavantaj: Esneklik azalabilir; karmaşık düzenlerde zor olabilir.
+   - Daha fazla bilgi için **CSS Float and Clear** bölümüne bakabilirsiniz.
+
+3. **CSS Flexbox**:
+   - **Flexbox**, ekran boyutları ve cihazlara göre öğelerin düzenlenmesini sağlar.
+   - Avantaj: Farklı ekran boyutlarına uyumlu, tahmin edilebilir davranışlar.
+   - Daha fazla bilgi için **CSS Flexbox** konusuna bakabilirsiniz.
+
+4. **CSS Grid**:
+   - **CSS Grid Layout**, satırlar ve sütunlara dayalı bir düzen sistemi sunar.
+   - Avantaj: Yüzer öğeler veya pozisyonlama kullanmadan düzen tasarımı daha kolay.
+   - Daha fazla bilgi için **CSS Grid** bölümüne göz atabilirsiniz.
+
+---
+
+**4. Örnek Düzen**
+Bir web sayfasının düzeni şu şekilde oluşturulabilir:
+
+- **Başlık (`<header>`)**
+- **Navigasyon Menüsü (`<nav>`)**
+- **Ana İçerik (`<section>`)**
+- **Kenar Çubuğu (`<aside>`)**
+- **Alt Bilgi (`<footer>`)**
+
+**Örnek Kod:**
+```html
+<header>Başlık</header>
+<nav>Menü</nav>
+<section>Ana İçerik</section>
+<aside>Kenar Çubuğu</aside>
+<footer>Alt Bilgi</footer>
+```
+
+---
+
+**5. Hangi Tekniği Kullanmalı?**
+- **Hızlı bir düzen istiyorsanız:** CSS Frameworks (ör. Bootstrap).
+- **Basit bir düzen için:** CSS Float.
+- **Esnek ve mobil uyumlu düzenler için:** CSS Flexbox.
+- **Karmaşık satır ve sütun düzenleri için:** CSS Grid.
+
+Bu teknikler, modern web tasarımında düzen oluşturmanın temel yöntemlerini kapsar. Hangi yöntemin kullanılacağı, projenin ihtiyaçlarına bağlıdır.
+-->
+
+  <header>Başlık</header>
+  <nav>Menü</nav>
+  <section>Ana İçerik</section>
+  <aside>Kenar Çubuğu</aside>
+  <footer>Alt Bilgi</footer>
+
+  <!--
+### **HTML Semantic Elements and Layout**
+
+#### **Özet ve Çeviri**
+
+---
+
+### **HTML Semantic Elements Nedir?**
+Semantic elementler, içerik hakkında hem tarayıcıya hem de geliştiriciye açık bir anlam ifade eden HTML etiketleridir.
+
+- **Non-Semantic Elements:** `<div>`, `<span>` gibi, içerik hakkında bilgi vermez.
+- **Semantic Elements:** `<article>`, `<nav>`, `<header>` gibi, içerik hakkında net bilgi verir.
+
+**Örnek:** 
+```html
+<header>
+  <h1>Başlık</h1>
+</header>
+<nav>
+  <a href="#home">Anasayfa</a>
+  <a href="#contact">İletişim</a>
+</nav>
+<section>
+  <p>Burada bir açıklama bulunur.</p>
+</section>
+<footer>
+  <p>Haklar saklıdır.</p>
+</footer>
+```
+
+---
+
+### **Semantic Etiketlerin Listesi ve Kullanımları**
+| **Etiket**       | **Açıklama**                                                                                 |
+|-------------------|---------------------------------------------------------------------------------------------|
+| `<article>`       | Bağımsız ve kendi başına anlamlı bir içerik tanımlar (ör. blog yazısı, haber).                |
+| `<aside>`         | Ana içerikten bağımsız ek içerikler tanımlar (ör. kenar çubuğu).                              |
+| `<details>`       | Kullanıcının görüntüleyebileceği veya gizleyebileceği ek detayları tanımlar.                  |
+| `<figcaption>`    | `<figure>` etiketi için bir başlık tanımlar.                                                  |
+| `<figure>`        | Kendine ait içerik (resim, diyagram) tanımlar.                                                |
+| `<footer>`        | Bir belgenin veya bölümün alt bilgisini tanımlar.                                             |
+| `<header>`        | Bir belgenin veya bölümün başlığını tanımlar.                                                 |
+| `<main>`          | Belgenin ana içeriğini tanımlar.                                                              |
+| `<mark>`          | Vurgulanmış/işaretlenmiş metin tanımlar.                                                      |
+| `<nav>`           | Navigasyon bağlantılarını tanımlar.                                                           |
+| `<section>`       | Bir belgedeki bölümü tanımlar (ör. başlıkla ayrılan bölümler).                                |
+| `<summary>`       | `<details>` için bir başlık tanımlar.                                                         |
+| `<time>`          | Tarih veya zamanı tanımlar.                                                                   |
+
+---
+
+### **Önemli Semantic Elementler**
+1. **`<header>`**: Sayfa veya bölüm başlığı.
+   - Logo, navigasyon bağlantıları içerir.
+   - Aynı sayfada birden fazla olabilir.
+
+2. **`<footer>`**: Alt bilgi içerir.
+   - Yazar bilgisi, telif hakkı bilgisi gibi içerikler eklenir.
+
+3. **`<article>`**: Bağımsız içerik için.
+   - Örnek: Blog yazıları, haber makaleleri.
+
+4. **`<section>`**: Tematik içerik grupları için.
+   - Örnek: Giriş bölümü, iletişim bilgileri.
+
+5. **`<nav>`**: Navigasyon bağlantıları.
+   - Örnek: Menü bağlantıları.
+
+6. **`<aside>`**: Ana içerikten bağımsız ek bilgiler.
+   - Örnek: Reklamlar, kenar çubuğu içerikleri.
+
+7. **`<figure>` ve `<figcaption>`**: Resimler, diyagramlar, grafikler ve bunların açıklamaları için.
+
+---
+
+### **Semantic Elementlerin Avantajları**
+1. **Daha Anlaşılır Kod:**
+   - Kodun amacı hem tarayıcı hem de geliştirici tarafından daha iyi anlaşılır.
+
+2. **SEO (Arama Motoru Optimizasyonu):**
+   - Semantik etiketler, arama motorlarının içeriği daha iyi anlamasına yardımcı olur.
+
+3. **Erişilebilirlik:**
+   - Ekran okuyucular gibi araçlar, semantik yapıyı kullanarak içeriği daha iyi yorumlayabilir.
+
+---
+
+### **Semantic ve Non-Semantic Örnek**
+**Non-Semantic:**
+```html
+<div id="header">
+  <h1>Başlık</h1>
+</div>
+```
+**Semantic:**
+```html
+<header>
+  <h1>Başlık</h1>
+</header>
+```
+
+---
+
+### **Sonuç**
+HTML'deki **semantic elements**, web sayfası yapısını organize etmenin ve anlamlı hale getirmenin en iyi yollarından biridir. Bu öğeler, sayfanın erişilebilirliğini, SEO performansını ve kodun okunabilirliğini artırır.
+-->
+  <header>
+    <h1>Başlık</h1>
+  </header>
+  <nav>
+    <a href="#home">Anasayfa</a>
+    <a href="#contact">İletişim</a>
+  </nav>
+  <section>
+    <p>Burada bir açıklama bulunur.</p>
+  </section>
+  <footer>
+    <p>Haklar saklıdır.</p>
+  </footer>
+
+
+  <div id="header">
+    <h1>Başlık</h1>
+  </div>
+
+  <header>
+    <h1>Başlık</h1>
+  </header>
+
+  <!--
+1. Belge Tipini Belirtin
+Her zaman ilk satırda belge tipi tanımlanmalıdır: <!DOCTYPE html>
+
+2. Küçük Harf Kullanın
+Etiket ve öznitelik isimlerini küçük harflerle yazın. Örneğin:
+İyi: <body>
+Kötü: <BODY>
+
+  3. HTML Etiketlerini Kapatın
+Her zaman tüm HTML etiketlerini kapatın:
+İyi: <section><p>Metin</p></section>
+Kötü: <section><p>Metin</p>
+
+  4. Öznitelik İsimlerini Küçük Harfle Yazın
+Örnek:
+İyi: <a href="link">Link</a>
+Kötü: <a HREF="link">Link</a>
+
+5. Öznitelik Değerlerini Tırnak İçinde Yazın
+Örnek:
+İyi: <table class="striped">
+Kötü: <table class=striped>
+
+6. Resimlerde alt, width ve height Kullanın
+Örnek:
+İyi: <img src="image.jpg" alt="Açıklama" style="width:128px;height:128px">
+Kötü: <img src="image.jpg">
+
+7. Boşlukları Düzgün Kullanın
+Eşittir işaretinin çevresine boşluk koymayın:
+İyi: <link rel="stylesheet" href="style.css">
+Kötü: <link rel = "stylesheet" href = "style.css">
+
+8. Uzun Kod Satırlarından Kaçının
+Kodun sağa kaymasını önlemek için satırları kısa tutun.
+
+9. Boş Satırlar ve Girintiler
+Kod bloklarını ayırmak için boş satırlar kullanın.
+Girinti için tab yerine 2 boşluk tercih edin:
+İyi
+<body>
+  <h1>Başlık</h1>
+  <p>Paragraf</p>
+</body>
+Kötü
+<body><h1>Başlık</h1><p>Paragraf</p></body>
+
+10. Liste ve Tablo Yapıları
+Liste ve tabloları düzenli yazın:
+İyi:
+html
+Kopyala
+Düzenle
+
+<ul>
+  <li>Öğe 1</li>
+  <li>Öğe 2</li>
+</ul>
+
+11. <title> Etiketini Atlamayın
+Her HTML sayfasında başlık ekleyin:
+Örnek: <title>Sayfa Başlığı</title>
+
+12. HTML Temel Etiketlerini Kullanın
+Her zaman <html> ve <body> etiketlerini ekleyin.
+
+13. Dil Belirtin
+<html> etiketinde dil belirtin:
+Örnek: <html lang="en">
+
+14. Meta Etiketleri Kullanın
+Dil ve karakter seti için meta etiketlerini ekleyin
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+15. Yorumlar
+Yorumları kısa yazın veya uzun yorumları düzgün biçimlendirin:
+
+16. Stil ve JavaScript
+CSS ve JS dosyalarını basit ve düzenli bağlayın
+
+17. Dosya ve Uzantı Kuralları
+Küçük harfli dosya isimleri kullanın (ör. index.html).
+HTML için .html, CSS için .css, JS için .js kullanın.
+-->
+
+  <body>
+    <h1>Başlık</h1>
+    <p>Paragraf</p>
+  </body>
+
+  <body>
+    <h1>Başlık</h1>
+    <p>Paragraf</p>
+  </body>
+
+
+  <!--
+### HTML Varlıkları (Entities) - Özet ve Çeviri
+
+HTML'de bazı karakterler tarayıcı tarafından karışıklığa yol açabileceği için varlıklar (entities) ile temsil edilmelidir.
+
+---
+
+#### **HTML Karakter Varlıkları**
+- HTML'de `<` ve `>` gibi özel karakterler doğrudan yazıldığında tarayıcı bunları HTML etiketi olarak algılayabilir.
+- Bu karakterler, varlık adları veya numaraları ile temsil edilir:
+  - `<` = `&lt;` veya `&#60;`
+  - `>` = `&gt;` veya `&#62;`
+  - `&` = `&amp;` veya `&#38;`
+
+**Varlık Kullanımı:**
+- **Varlık Adı:** `&entity_name;` (Daha kolay hatırlanır)
+- **Varlık Numarası:** `&#entity_number;`
+
+---
+
+#### **Boşluk ve Çizgi Varlıkları**
+- **Boşluk (Non-breaking Space):**
+  - `&nbsp;` (Boşlukların bir satırda kırılmasını önler.)
+  - Örnekler:
+    - `§ 10`
+    - `10 km/h`
+    - `10 PM`
+
+- **Kırılmayan Tire (Non-breaking Hyphen):**
+  - `&#8209;` (Bir satırda kırılmayan tire oluşturur.)
+  - Örnek: `word‑word`
+
+---
+
+#### **Sık Kullanılan HTML Karakter Varlıkları**
+
+| Karakter  | Açıklama                | Varlık Adı  | Varlık Numarası |
+|-----------|-------------------------|-------------|-----------------|
+| (boşluk)  | Non-breaking space      | `&nbsp;`    | `&#160;`        |
+| `<`       | Küçüktür işareti        | `&lt;`      | `&#60;`         |
+| `>`       | Büyüktür işareti        | `&gt;`      | `&#62;`         |
+| `&`       | Ampersand               | `&amp;`     | `&#38;`         |
+| `"`       | Çift tırnak             | `&quot;`    | `&#34;`         |
+| `'`       | Tek tırnak              | `&apos;`    | `&#39;`         |
+| `¢`       | Cent işareti            | `&cent;`    | `&#162;`        |
+| `£`       | Pound işareti           | `&pound;`   | `&#163;`        |
+| `¥`       | Yen işareti             | `&yen;`     | `&#165;`        |
+| `€`       | Euro işareti            | `&euro;`    | `&#8364;`       |
+| `©`       | Telif hakkı             | `&copy;`    | `&#169;`        |
+| `®`       | Tescilli marka          | `&reg;`     | `&#174;`        |
+
+---
+
+#### **Diakritik İşaretler**
+- Diakritik işaretler, harflere eklenen sembollerdir (ör. aksanlar).
+- HTML'de diakritik işaretler alfanümerik karakterlerle birleştirilebilir:
+  - Örnekler:
+    - `à` = `a&#768;`
+    - `á` = `a&#769;`
+    - `Ò` = `O&#768;`
+    - `Ó` = `O&#769;`
+
+---
+
+Bu özet, HTML'de özel karakterleri doğru şekilde temsil etmenize ve tarayıcı hatalarını önlemenize yardımcı olur.
+-->
+
+
+  <!--
+### HTML Sembolleri (Özet ve Çeviri)
+
+HTML'de klavyede bulunmayan özel semboller ve harfler, varlıklar (entities) kullanılarak eklenebilir.
+
+---
+
+#### **HTML Sembol Varlıkları**
+- Özel sembolleri HTML'ye eklemek için varlık adı veya numarası kullanılabilir:
+  - **Varlık Adı:** `&entity_name;`
+  - **Varlık Numarası:** `&#entity_number;` (Decimal) veya `&#xentity_number;` (Hexadecimal)
+
+**Örnek: Euro Sembolü**
+```html
+<p>&euro;</p>      Varlık adı 
+<p>&#8364;</p>    Decimal numara 
+<p>&#x20AC;</p>   Hexadecimal numara 
+```
+Tarayıcıda şu şekilde görünür: **€**
+
+---
+
+#### **Matematiksel Semboller**
+HTML, birçok matematiksel sembolü destekler. Örnekler:
+
+| Sembol | Numara   | Varlık Adı  | Açıklama                   |
+|--------|----------|-------------|----------------------------|
+| ∀      | `&#8704;` | `&forall;`  | Tüm (For all)             |
+| ∂      | `&#8706;` | `&part;`    | Kısmi türev               |
+| ∃      | `&#8707;` | `&exist;`   | Varlık (There exists)     |
+| ∅      | `&#8709;` | `&empty;`   | Boş küme                  |
+| ∑      | `&#8721;` | `&sum;`     | N-ary toplam (Summation)  |
+
+---
+
+#### **Yunan Harfleri**
+HTML, Yunan alfabesindeki harfleri de destekler. Örnekler:
+
+| Sembol | Numara   | Varlık Adı    | Açıklama          |
+|--------|----------|---------------|-------------------|
+| Α      | `&#913;`  | `&Alpha;`     | Alfa (Alpha)      |
+| Β      | `&#914;`  | `&Beta;`      | Beta (Beta)       |
+| Γ      | `&#915;`  | `&Gamma;`     | Gama (Gamma)      |
+| Δ      | `&#916;`  | `&Delta;`     | Delta (Delta)     |
+
+---
+
+#### **Diğer Kullanışlı Semboller**
+HTML'de sıklıkla kullanılan diğer semboller:
+
+| Sembol | Numara   | Varlık Adı   | Açıklama         |
+|--------|----------|--------------|------------------|
+| ©      | `&#169;`  | `&copy;`      | Telif hakkı      |
+| ®      | `&#174;`  | `&reg;`      | Tescilli marka   |
+| ™      | `&#8482;` | `&trade;`    | Ticari marka     |
+| ←      | `&#8592;` | `&larr;`     | Sol ok           |
+| →      | `&#8594;` | `&rarr;`     | Sağ ok           |
+| ♠      | `&#9824;` | `&spades;`   | Maça             |
+| ♣      | `&#9827;` | `&clubs;`    | Karo             |
+| ♥      | `&#9829;` | `&hearts;`   | Kalp             |
+| ♦      | `&#9830;` | `&diams;`    | Karo             |
+
+---
+
+HTML varlıkları ile klavyede bulunmayan sembolleri kolayca kullanabilirsiniz. Bu, matematiksel ifadeler, para birimleri ve özel simgeler gibi alanlarda oldukça faydalıdır.
+
+
+### HTML'de Emoji Kullanımı (Özet ve Çeviri)
+
+HTML'de emojiler, UTF-8 karakter setinin bir parçasıdır. Bu karakterler, görsel simgeler gibi görünse de aslında harfler veya sembollerdir.
+
+---
+
+#### **Emoji Nedir?**
+- Emojiler **UTF-8** (Unicode) karakter setinden gelen sembollerdir.
+- Klavyede bulunmayan bu semboller, HTML'de **varlık numaraları** ile temsil edilebilir.
+
+---
+
+#### **HTML'de Emoji Kullanımı**
+- Emojiler, tıpkı diğer karakterler gibi HTML sayfalarında gösterilebilir.
+- Her emoji, bir **varlık numarası** ile ifade edilir: 
+  - Örneğin: `&#128512;` (😀)
+  
+---
+
+#### **HTML Emoji Örnekleri**
+
+| Emoji  | Varlık Numarası  |
+|--------|-------------------|
+| 🗻      | `&#128507;`       |
+| 🗽      | `&#128509;`       |
+| 😀      | `&#128512;`       |
+| 😂      | `&#128514;`       |
+| 😍      | `&#128525;`       |
+| 💗      | `&#128151;`       |
+
+---
+
+#### **HTML'de Emoji Kullanım Örneği**
+```html
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+
+<h1>Emoji Örneği</h1>
+
+<p>Benim emojilerim: 😀 😂 😍 💗</p>
+<p>Varlık numaralarıyla: &#128512; &#128514; &#128525; &#128151;</p>
+
+</body>
+</html>
+```
+
+- Bu kod tarayıcıda şu şekilde görünür:  
+  **Benim emojilerim:** 😀 😂 😍 💗
+
+---
+
+#### **Karakter Seti Tanımlaması**
+- HTML sayfalarında emojilerin doğru görüntülenmesi için **UTF-8** karakter seti belirtilmelidir:
+  ```html
+  <meta charset="UTF-8">
+  ```
+
+---
+
+#### **Emoji Boyutlandırma**
+- Emojiler, HTML'de diğer metinler gibi boyutlandırılabilir:
+  ```html
+  <p style="font-size:48px">&#128512; &#128516; &#128525;</p>
+  ```
+  Bu kodda emojiler 48px boyutunda görüntülenir.
+
+---
+
+#### **Notlar**
+- Emojiler kopyalanabilir, taşınabilir ve yazı karakterleri gibi işlenebilir.
+- Modern tarayıcılar, UTF-8 karakter setini varsayılan olarak destekler.
+
+Bu özet, HTML'de emojilerin nasıl kullanılacağını anlamanızı sağlar. 😊
+
+
+
+
+### HTML Kodlama (Karakter Setleri) - Özet ve Çeviri
+
+HTML'de bir sayfanın doğru görüntülenmesi için tarayıcı, sayfada kullanılan karakter setini bilmelidir. Karakter seti, `<meta>` etiketi ile belirtilir.
+
+---
+
+#### **HTML'de Karakter Seti Tanımlaması**
+- HTML5'te genellikle **UTF-8** karakter seti kullanılır:
+  ```html
+  <meta charset="UTF-8">
+  ```
+- **UTF-8** neredeyse tüm dünya dillerindeki karakterleri ve sembolleri kapsar.
+
+---
+
+#### **Farklı Karakter Setleri**
+1. **ASCII (American Standard Code for Information Interchange):**
+   - İlk karakter kodlama standardıdır.
+   - 128 karakter içerir: 
+     - İngilizce harfler (A-Z)
+     - Sayılar (0-9)
+     - Özel karakterler (!, $, +, vb.)
+
+2. **ANSI (Windows-1252):**
+   - Windows işletim sisteminde kullanılır.
+   - İlk 127 karakteri ASCII ile aynıdır.
+   - 128-159 arasında özel karakterler eklenmiştir.
+
+3. **ISO-8859-1:**
+   - HTML 4'ün varsayılan karakter setidir.
+   - İlk 127 karakter ASCII ile aynıdır.
+   - UTF-8 ve ANSI ile 160-255 arasında benzerdir.
+
+4. **UTF-8:**
+   - ASCII ile ilk 127 karakter aynıdır.
+   - 160-255 arasındaki karakterler ANSI ve ISO-8859-1 ile uyumludur.
+   - 256'dan 10.000'e kadar ek karakterler içerir.
+   - En yaygın kullanılan karakter setidir.
+
+---
+
+#### **Karakter Setlerinin Kullanımı**
+- **HTML 4 için Örnek:**
+  ```html
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+  ```
+- **HTML 5 için Örnek:**
+  ```html
+  <meta charset="UTF-8">
+  ```
+
+---
+
+#### **Karakter Setlerinin Farklılıkları**
+Karakter setleri arasında farklar bazı özel karakterlerde belirgindir. Örnek:
+
+| Karakter | ASCII | ANSI | ISO-8859-1 | UTF-8 | Açıklama              |
+|----------|-------|------|------------|-------|-----------------------|
+| 32       |       |      |            |       | Boşluk                |
+| 33       | !     | !    | !          | !     | Ünlem işareti         |
+| 36       | $     | $    | $          | $     | Dolar işareti         |
+| 65       | A     | A    | A          | A     | Büyük A Harfi         |
+| 128      |       | €    |            | €     | Euro işareti          |
+
+---
+
+#### **UTF-8 ile Karakter Gösterimi**
+- Karakterleri görüntülemek için numaralarını kullanabilirsiniz:
+  ```html
+  <p>&#65; &#66; &#67;</p>  A, B, C harflerini gösterir 
+  ```
+
+---
+
+#### **Özel Karakter Örnekleri**
+- **Euro işareti:** `&#128;` veya `&euro;`
+- **Telif hakkı işareti:** `&#169;` veya `&copy;`
+- **Bölme işareti:** `&#247;` veya `&divide;`
+
+---
+
+Bu özet, HTML'deki farklı karakter setlerini ve bunların doğru kullanımını anlamanızı sağlar. **UTF-8**, en geniş kapsamlı ve güncel karakter seti olarak önerilir.
+
+  
+  ### HTML URL'ler (Uniform Resource Locators) - Özet ve Çeviri
+
+  Bir URL, web adresi olarak bilinir. URL'ler kelimelerden (ör. w3schools.com) veya IP adreslerinden (ör. 192.68.20.50) oluşabilir.
+  
+  ---
+  
+  #### **URL - Uniform Resource Locator**
+  - **URL**, web üzerindeki bir belgeye (veya başka bir veriye) erişim adresidir.
+  - Örnek URL: `https://www.w3schools.com/html/default.asp`
+  
+  **URL'nin Yapısı:**
+  ```plaintext
+  scheme://prefix.domain:port/path/filename
+  ```
+  
+  **Bileşenler:**
+  1. **scheme**: İnternet hizmet türünü tanımlar (ör. `http` veya `https`).
+  2. **prefix**: Alan adı ön eki (ör. `www`, varsayılan olarak kullanılır).
+  3. **domain**: İnternet alan adı (ör. `w3schools.com`).
+  4. **port**: Sunucudaki port numarası (ör. `http` için varsayılan: `80`).
+  5. **path**: Sunucudaki dosya yolu (belirtilmezse kök dizin).
+  6. **filename**: Belgenin veya kaynağın adı.
+  
+  ---
+  
+  #### **Yaygın URL Şemaları**
+  
+  | Şema  | Açılım                                   | Kullanım                             |
+  |-------|-----------------------------------------|--------------------------------------|
+  | http  | HyperText Transfer Protocol             | Standart web sayfaları (şifrelenmemiş) |
+  | https | Secure HyperText Transfer Protocol      | Güvenli web sayfaları (şifrelenmiş)   |
+  | ftp   | File Transfer Protocol                  | Dosya indirme/yükleme                |
+  | file  |                                         | Bilgisayardaki bir dosya             |
+  
+  ---
+  
+  #### **URL Kodlama**
+  - URL'ler yalnızca **ASCII** karakterleriyle gönderilebilir.
+  - ASCII dışı karakterler, URL kodlama kullanılarak "%", ardından onaltılık değerle değiştirilir.
+  - **Boşluklar**, URL kodlamada genellikle "+" veya `%20` ile değiştirilir.
+  
+  **Örnek:**
+  - **Metin:** `Hello Günter`
+  - **Kodlanmış URL:** `Hello%20G%C3%BCnter`
+  
+  ---
+  
+  #### **ASCII Kodlama Örnekleri**
+  
+  | Karakter | Windows-1252 Kodlama | UTF-8 Kodlama    |
+  |----------|-----------------------|------------------|
+  | €        | `%80`                | `%E2%82%AC`      |
+  | £        | `%A3`                | `%C2%A3`         |
+  | ©        | `%A9`                | `%C2%A9`         |
+  | ®        | `%AE`                | `%C2%AE`         |
+  | À        | `%C0`                | `%C3%80`         |
+  | Á        | `%C1`                | `%C3%81`         |
+  
+  ---
+  
+  ### **URL Kodlama ve Kullanım Notları**
+  - HTML5'te varsayılan karakter seti **UTF-8**'dir.
+  - ASCII dışı karakterler ve boşluklar, URL kodlama ile dönüştürülmelidir.
+  - Özel karakterleri kullanmadan önce kodlama referansı kontrol edilmelidir. 
+  
+  Bu bilgiler, URL'lerin nasıl yapılandırıldığını ve kodlama yöntemlerini anlamanıza yardımcı olur.
+
+
+
+### HTML ve XHTML Karşılaştırması (Özet ve Çeviri)
+
+#### **XHTML Nedir?**
+- XHTML: **Extensible HyperText Markup Language**.
+- **HTML**'in daha sıkı, XML tabanlı bir versiyonudur.
+- Tüm büyük tarayıcılar tarafından desteklenir.
+- Daha katı kurallara sahiptir ve **hata yönetimi** daha iyidir.
+
+---
+
+#### **Neden XHTML?**
+- XML, belgelerin doğru işaretlenmesini gerektirir (**well-formed**).
+- XHTML, HTML'in diğer veri formatlarıyla (ör. XML) daha uyumlu ve esnek olmasını sağlar.
+- HTML'de tarayıcılar hataları görmezden gelirken, XHTML daha sıkı hata yönetimi sunar.
+
+---
+
+### **XHTML'in HTML'den Önemli Farklılıkları**
+
+1. **<!DOCTYPE> Kullanımı Zorunludur**
+   - XHTML belgelerinde `<!DOCTYPE>` tanımı zorunludur.
+
+   **Örnek:**
+   ```html
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+   <html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+     <title>Başlık</title>
+   </head>
+   <body>
+     İçerik buraya gelecek...
+   </body>
+   </html>
+   ```
+
+2. **Etiketler Doğru İç İçe Olmalıdır**
+   - Etiketlerin sırası düzgün olmalıdır.
+   - **Doğru:**
+     ```html
+     <b><i>Metin</i></b>
+     ```
+   - **Yanlış:**
+     ```html
+     <b><i>Metin</b></i>
+     ```
+
+3. **Tüm Etiketler Kapatılmalıdır**
+   - Tüm HTML elemanları kapatılmalıdır.
+   - **Doğru:**
+     ```html
+     <p>Bu bir paragraf</p>
+     ```
+   - **Yanlış:**
+     ```html
+     <p>Bu bir paragraf
+     ```
+
+4. **Boş Etiketler Kapatılmalıdır**
+   - Boş HTML etiketleri bile kapatılmalıdır.
+   - **Doğru:**
+     ```html
+     <br />
+     <hr />
+     <img src="resim.jpg" alt="Açıklama" />
+     ```
+   - **Yanlış:**
+     ```html
+     <br>
+     <hr>
+     <img src="resim.jpg" alt="Açıklama">
+     ```
+
+5. **Etiketler Küçük Harflerle Yazılmalıdır**
+   - **Doğru:**
+     ```html
+     <body>
+     <p>Bu bir paragraf</p>
+     </body>
+     ```
+   - **Yanlış:**
+     ```html
+     <BODY>
+     <P>Bu bir paragraf</P>
+     </BODY>
+     ```
+
+6. **Öznitelik İsimleri Küçük Harflerle Yazılmalıdır**
+   - **Doğru:**
+     ```html
+     <a href="link">Tıkla</a>
+     ```
+   - **Yanlış:**
+     ```html
+     <a HREF="link">Tıkla</a>
+     ```
+
+7. **Öznitelik Değerleri Tırnak İçinde Olmalıdır**
+   - **Doğru:**
+     ```html
+     <a href="link">Tıkla</a>
+     ```
+   - **Yanlış:**
+     ```html
+     <a href=link>Tıkla</a>
+     ```
+
+8. **Öznitelik Minimizasyonu Yasaktır**
+   - XHTML'de özniteliklerin eksik yazılması yasaktır.
+   - **Doğru:**
+     ```html
+     <input type="checkbox" checked="checked" />
+     ```
+   - **Yanlış:**
+     ```html
+     <input type="checkbox" checked />
+     ```
+
+---
+
+### **Sonuç**
+XHTML, HTML'e göre daha sıkı kurallar ve daha iyi hata yönetimi sunar. Web sayfalarınızı W3C Validator ile doğrulamanız önerilir:  
+[W3C Validator](https://www.w3schools.com/html/html_validate.html)
+
+
+
+### HTML Formlar (Özet ve Çeviri)
+
+HTML formları, kullanıcıdan veri toplamak için kullanılır. Bu veriler genellikle bir sunucuya işlenmek üzere gönderilir.
+
+---
+
+#### **1. `<form>` Elemanı**
+- HTML formları oluşturmak için kullanılır.
+- İçerisinde çeşitli form elemanları (metin kutuları, onay kutuları, radyo butonları, vb.) bulunur.
+
+**Örnek:**
+```html
+<form>
+   Form elemanları burada yer alır 
+</form>
+```
+
+---
+
+#### **2. `<input>` Elemanı**
+- Formlarda en çok kullanılan elemandır.
+- **`type`** özelliğiyle farklı türlerde giriş alanları oluşturabilirsiniz.
+
+| **`type` Değeri**    | **Açıklama**                                        |
+|-----------------------|----------------------------------------------------|
+| `text`               | Tek satırlık metin giriş alanı                     |
+| `radio`              | Radyo butonu (tek seçim için)                      |
+| `checkbox`           | Onay kutusu (birden fazla seçim için)              |
+| `submit`             | Formu göndermek için buton                         |
+| `button`             | Tıklanabilir bir buton                             |
+
+---
+
+#### **3. Metin Alanları (`<input type="text">`)**
+- Kullanıcıdan metin almak için kullanılır.
+
+**Örnek:**
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+
+---
+
+#### **4. `<label>` Elemanı**
+- Bir form elemanına açıklama ekler ve kullanıcı deneyimini artırır.
+- **`for`** özelliği, `<label>` ile bir `<input>` elemanını bağlar.
+
+---
+
+#### **5. Radyo Butonları (`<input type="radio">`)**
+- Kullanıcının sınırlı seçeneklerden **tek bir seçim yapmasını** sağlar.
+
+**Örnek:**
+```html
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+---
+
+#### **6. Onay Kutuları (`<input type="checkbox">`)**
+- Kullanıcının **sıfır veya daha fazla seçim yapmasını** sağlar.
+
+**Örnek:**
+```html
+<form>
+  <input type="checkbox" id="bike" name="vehicle1" value="Bike">
+  <label for="bike"> I have a bike</label><br>
+  <input type="checkbox" id="car" name="vehicle2" value="Car">
+  <label for="car"> I have a car</label><br>
+  <input type="checkbox" id="boat" name="vehicle3" value="Boat">
+  <label for="boat"> I have a boat</label>
+</form>
+```
+
+---
+
+#### **7. Gönderme Butonu (`<input type="submit">`)**
+- Kullanıcının form verilerini bir form işleyiciye göndermesini sağlar.
+- **`action`** özelliği, formun gönderileceği sunucu adresini belirtir.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+---
+
+#### **8. `name` Özelliği**
+- Her `<input>` elemanında bir **`name`** özelliği olmalıdır.
+- **`name`** olmadan, input değerleri gönderilmez.
+
+**Hatalı Örnek:**
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+---
+
+### **Sonuç**
+HTML formları, kullanıcıdan bilgi toplamak ve bu bilgileri işlemek için kullanılır. Doğru etiketler ve özellikler kullanılarak etkili formlar oluşturabilirsiniz.
+  
+
+
+
+  -->
+
+  <form>
+    <!-- Form elemanları burada yer alır -->
+  </form>
+
+
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+
+  <form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  </form>
+
+  <form>
+    <input type="checkbox" id="bike" name="vehicle1" value="Bike">
+    <label for="bike"> I have a bike</label><br>
+    <input type="checkbox" id="car" name="vehicle2" value="Car">
+    <label for="car"> I have a car</label><br>
+    <input type="checkbox" id="boat" name="vehicle3" value="Boat">
+    <label for="boat"> I have a boat</label>
+  </form>
+
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!--
+### HTML Form Özellikleri (Özet ve Çeviri)
+
+HTML `<form>` elemanı, kullanıcı girişini toplamak için çeşitli özelliklere sahiptir. İşte bu özelliklerin açıklamaları:
+
+---
+
+#### **1. `action` Özelliği**
+- Formun gönderildiğinde yapılacak işlemi tanımlar.
+- Genellikle form verileri bir sunucu dosyasına gönderilir.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <input type="text" name="fname">
+  <input type="submit">
+</form>
+```
+- **`/action_page.php`**: Form verilerini işleyecek sunucu tarafındaki dosya.
+- **İpucu:** `action` belirtilmezse, form verileri aynı sayfaya gönderilir.
+
+---
+
+#### **2. `target` Özelliği**
+- Form gönderildikten sonra alınan yanıtın nerede görüntüleneceğini belirler.
+
+**Değerler:**
+| **Değer**   | **Açıklama**                                      |
+|-------------|---------------------------------------------------|
+| `_blank`    | Yeni bir sekme/pencerede yanıtı gösterir          |
+| `_self`     | Yanıtı aynı pencerede gösterir (varsayılan)       |
+| `_parent`   | Üst çerçevede yanıtı gösterir                    |
+| `_top`      | Yanıtı tüm pencere içinde gösterir               |
+| `framename` | Belirtilen iframe içinde yanıtı gösterir          |
+
+**Örnek:**
+```html
+<form action="/action_page.php" target="_blank">
+  <input type="submit">
+</form>
+```
+- Yanıt yeni bir sekmede açılır.
+
+---
+
+#### **3. `method` Özelliği**
+- Form verilerinin gönderiminde kullanılacak HTTP yöntemini belirler.
+- **Değerler:**
+  - `get`: Verileri URL'ye ekler.
+  - `post`: Verileri HTTP isteğinin gövdesine ekler.
+
+**GET Yöntemi:**
+- Form verileri URL'de görünür.
+- **Kullanım Alanları:** Güvenli olmayan veri (ör. arama sorguları).
+- **Kısıtlamalar:**
+  - URL uzunluğu sınırlıdır (2048 karakter).
+  - Gizli veya hassas veri göndermek için kullanılmamalıdır.
+
+**Örnek:**
+```html
+<form action="/action_page.php" method="get">
+  <input type="text" name="fname">
+  <input type="submit">
+</form>
+```
+
+**POST Yöntemi:**
+- Form verileri URL'de görünmez.
+- **Kullanım Alanları:** Büyük veri veya hassas bilgilerin gönderimi.
+- **Avantajlar:**
+  - Veri boyutu sınırlaması yoktur.
+  - Daha güvenlidir.
+
+**Örnek:**
+```html
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname">
+  <input type="submit">
+</form>
+```
+
+---
+
+#### **4. `autocomplete` Özelliği**
+- Tarayıcının, kullanıcı tarafından daha önce girilen değerleri otomatik tamamlayıp tamamlamayacağını belirler.
+- **Değerler:**
+  - `on`: Otomatik tamamlama açık (varsayılan).
+  - `off`: Otomatik tamamlama kapalı.
+
+**Örnek:**
+```html
+<form action="/action_page.php" autocomplete="on">
+  <input type="text" name="fname">
+  <input type="submit">
+</form>
+```
+
+---
+
+#### **5. `novalidate` Özelliği**
+- Form verilerinin doğrulama yapılmadan gönderilmesini sağlar.
+- Bir boolean (doğru/yanlış) özelliktir.
+
+**Örnek:**
+```html
+<form action="/action_page.php" novalidate>
+  <input type="email" name="email">
+  <input type="submit">
+</form>
+```
+- Giriş alanı (ör. e-posta) doğrulama olmadan gönderilir.
+
+---
+
+### **Sonuç**
+HTML form özellikleri, form verilerinin nasıl işlendiğini ve gönderildiğini kontrol eder. Özellikle hassas veriler için **`POST`** yöntemi ve uygun doğrulama mekanizmaları kullanılmalıdır.
+-->
+
+  <form action="/action_page.php">
+    <input type="text" name="fname">
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php" target="_blank">
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php" method="get">
+    <input type="text" name="fname">
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php" method="post">
+    <input type="text" name="fname">
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php" autocomplete="on">
+    <input type="text" name="fname">
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php" novalidate>
+    <input type="email" name="email">
+    <input type="submit">
+  </form>
+
+
+
+  <!--
+### HTML Form Elemanları (Özet ve Düzenlenmiş Bilgiler)
+
+HTML formlarında kullanıcıdan bilgi toplamak için kullanılan elemanlar ve açıklamaları:
+
+---
+
+### **1. `<form>` Elemanı**
+- HTML formunun ana kapsayıcı elemanıdır.
+- Kullanıcı girişlerini alır ve sunucuya gönderir.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+   Form elemanları burada yer alır 
+</form>
+```
+
+---
+
+### **2. `<input>` Elemanı**
+- En sık kullanılan form elemanıdır.
+- **`type`** özelliğiyle farklı türlerde giriş alanları oluşturulur.
+
+**Örnek:**
+```html
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+```
+
+---
+
+### **3. `<label>` Elemanı**
+- Form elemanları için açıklamalar ekler.
+- **`for`** özelliği, bir `<label>` ile `<input>` elemanını bağlar.
+
+**Örnek:**
+```html
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+```
+
+---
+
+### **4. `<select>` ve `<option>` Elemanları**
+- Açılır liste (dropdown) oluşturur.
+- **`<option>`** elemanı, seçim seçeneklerini tanımlar.
+
+**Örnek:**
+```html
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat" selected>Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```
+
+- **Birden Fazla Seçim İzni:**
+  ```html
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  ```
+
+---
+
+### **5. `<textarea>` Elemanı**
+- Çok satırlı metin alanı oluşturur.
+
+**Örnek:**
+```html
+<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+```
+
+- **CSS ile boyutlandırma:**
+  ```html
+  <textarea name="message" style="width:200px; height:600px;">
+  The cat was playing in the garden.
+  </textarea>
+  ```
+
+---
+
+### **6. `<button>` Elemanı**
+- Tıklanabilir bir buton tanımlar.
+
+**Örnek:**
+```html
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+```
+
+---
+
+### **7. `<fieldset>` ve `<legend>` Elemanları**
+- Formdaki ilgili verileri gruplar.
+- **`<legend>`** etiketi, grup için bir başlık tanımlar.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+```
+
+---
+
+### **8. `<datalist>` Elemanı**
+- Kullanıcıya önceden tanımlanmış seçenekler sunar.
+- **`list`** özelliği ile bir `<input>` elemanına bağlanır.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+```
+
+---
+
+### **9. `<output>` Elemanı**
+- Bir hesaplama sonucunu temsil eder (ör. bir JavaScript işlemi sonucu).
+
+**Örnek:**
+```html
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+```
+
+---
+
+### **Sonuç**
+HTML form elemanları, kullanıcıdan bilgi toplamak ve sunucuya iletmek için birçok farklı seçenek sunar. Doğru yapılandırılmış formlar, hem kullanıcı deneyimini artırır hem de geliştiriciler için verimli bir çözüm sağlar.
+-->
+
+  <form action="/action_page.php">
+    <!-- Form elemanları burada yer alır -->
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat" selected>Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+
+    <textarea name="message" style="width:200px; height:600px;">
+  The cat was playing in the garden.
+  </textarea>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+  </form>
+
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+
+  <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+
+
+  <!--
+### HTML Input Türleri (Özet ve Çeviri)
+
+HTML'de `<input>` elemanı, kullanıcı girişlerini toplamak için kullanılır. **`type`** özelliği ile farklı türde giriş alanları tanımlanabilir.
+
+---
+
+### **Temel Input Türleri**
+
+1. **`type="text"`**
+   - Tek satırlık metin alanı.
+   ```html
+   <input type="text" id="fname" name="fname">
+   ```
+
+2. **`type="password"`**
+   - Şifre alanı. Girişler maskelenir.
+   ```html
+   <input type="password" id="pwd" name="pwd">
+   ```
+
+3. **`type="submit"`**
+   - Form verilerini göndermek için bir buton.
+   ```html
+   <input type="submit" value="Submit">
+   ```
+
+4. **`type="reset"`**
+   - Formdaki girişleri varsayılan değerlere sıfırlar.
+   ```html
+   <input type="reset" value="Reset">
+   ```
+
+5. **`type="button"`**
+   - Tıklanabilir buton. Örnek:
+   ```html
+   <input type="button" onclick="alert('Hello!')" value="Click Me!">
+   ```
+
+---
+
+### **Seçim Türleri**
+
+1. **`type="radio"`**
+   - Kullanıcının bir seçim yapmasına izin verir.
+   ```html
+   <input type="radio" id="html" name="language" value="HTML">
+   <label for="html">HTML</label>
+   ```
+
+2. **`type="checkbox"`**
+   - Kullanıcının birden fazla seçenek işaretlemesine izin verir.
+   ```html
+   <input type="checkbox" id="car" name="vehicle" value="Car">
+   <label for="car">I have a car</label>
+   ```
+
+---
+
+### **Dosya ve Medya Türleri**
+
+1. **`type="file"`**
+   - Dosya seçme alanı.
+   ```html
+   <input type="file" id="myfile" name="myfile">
+   ```
+
+2. **`type="image"`**
+   - Görsel bir gönderim butonu.
+   ```html
+   <input type="image" src="submit.png" alt="Submit">
+   ```
+
+---
+
+### **Tarih ve Saat Türleri**
+
+1. **`type="date"`**
+   - Tarih seçimi için alan.
+   ```html
+   <input type="date" id="birthday" name="birthday">
+   ```
+
+2. **`type="datetime-local"`**
+   - Tarih ve saat seçimi.
+   ```html
+   <input type="datetime-local" id="meeting" name="meeting">
+   ```
+
+3. **`type="time"`**
+   - Saat seçimi için alan.
+   ```html
+   <input type="time" id="appt" name="appt">
+   ```
+
+4. **`type="month"`**
+   - Ay ve yıl seçimi.
+   ```html
+   <input type="month" id="bdaymonth" name="bdaymonth">
+   ```
+
+5. **`type="week"`**
+   - Hafta ve yıl seçimi.
+   ```html
+   <input type="week" id="week" name="week">
+   ```
+
+---
+
+### **Sayısal Giriş Türleri**
+
+1. **`type="number"`**
+   - Sadece sayısal değer girişi.
+   ```html
+   <input type="number" id="quantity" name="quantity" min="1" max="10">
+   ```
+
+2. **`type="range"`**
+   - Kaydırmalı kontrol (slider).
+   ```html
+   <input type="range" id="vol" name="vol" min="0" max="100">
+   ```
+
+---
+
+### **Diğer Türler**
+
+1. **`type="email"`**
+   - E-posta adresi girişi.
+   ```html
+   <input type="email" id="email" name="email">
+   ```
+
+2. **`type="url"`**
+   - URL adresi girişi.
+   ```html
+   <input type="url" id="homepage" name="homepage">
+   ```
+
+3. **`type="search"`**
+   - Arama alanı.
+   ```html
+   <input type="search" id="search" name="search">
+   ```
+
+4. **`type="tel"`**
+   - Telefon numarası girişi.
+   ```html
+   <input type="tel" id="phone" name="phone">
+   ```
+
+5. **`type="color"`**
+   - Renk seçici.
+   ```html
+   <input type="color" id="favcolor" name="favcolor">
+   ```
+
+6. **`type="hidden"`**
+   - Kullanıcı tarafından görünmeyen bir alan.
+   ```html
+   <input type="hidden" id="custId" name="custId" value="3487">
+   ```
+
+---
+
+### **Input Özellikleri**
+
+| **Özellik**     | **Açıklama**                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `checked`        | Varsayılan olarak seçili (checkbox veya radio).                            |
+| `disabled`       | Alanı devre dışı bırakır.                                                  |
+| `maxlength`      | Girilebilecek maksimum karakter sayısı.                                    |
+| `min` ve `max`   | Sayısal giriş için minimum ve maksimum değer.                              |
+| `pattern`        | Giriş değerini bir düzenli ifadeye göre kontrol eder.                      |
+| `readonly`       | Sadece okunabilir giriş alanı.                                             |
+| `required`       | Giriş alanının doldurulmasını zorunlu kılar.                               |
+| `size`           | Metin alanının genişliği (karakter sayısına göre).                         |
+| `step`           | Sayısal giriş için izin verilen adımları belirler.                         |
+| `value`          | Giriş alanı için varsayılan değer.                                         |
+
+---
+
+### **Sonuç**
+HTML `input` elemanlarının farklı türleri, kullanıcıdan çeşitli formatlarda veri toplamayı sağlar. Özellikler kullanılarak giriş alanlarının işlevselliği artırılabilir.
+-->
+
+  <input type="text" id="fname" name="fname">
+  <input type="password" id="pwd" name="pwd">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+  <input type="button" onclick="alert('Hello!')" value="Click Me!">
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html">HTML</label>
+  <input type="checkbox" id="car" name="vehicle" value="Car">
+  <label for="car">I have a car</label>
+  <input type="file" id="myfile" name="myfile">
+  <input type="image" src="submit.png" alt="Submit">
+
+  <!--test et-->
+  <input type="date" id="birthday" name="birthday">
+  <input type="datetime-local" id="meeting" name="meeting">
+
+  <input type="time" id="appt" name="appt">
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="week" id="week" name="week">
+
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+  <input type="range" id="vol" name="vol" min="0" max="100">
+
+  <input type="email" id="email" name="email">
+  <input type="url" id="homepage" name="homepage">
+  <input type="search" id="search" name="search">
+  <input type="tel" id="phone" name="phone">
+  <input type="color" id="favcolor" name="favcolor">
+  <input type="hidden" id="custId" name="custId" value="3487">
+
+  <!--
+### HTML `<input>` Özellikleri (Özet ve Çeviri)
+
+HTML formlarında `<input>` elemanları çeşitli özelliklerle yapılandırılabilir. İşte temel özellikler ve açıklamaları:
+
+---
+
+### **1. `value`**
+- Giriş alanının başlangıç (varsayılan) değerini tanımlar.
+```html
+<input type="text" id="fname" name="fname" value="John">
+```
+
+---
+
+### **2. `readonly`**
+- Giriş alanını sadece okunabilir yapar. Değer gönderilir ama değiştirilemez.
+```html
+<input type="text" id="fname" name="fname" value="John" readonly>
+```
+
+---
+
+### **3. `disabled`**
+- Giriş alanını devre dışı bırakır. Değeri gönderilmez.
+```html
+<input type="text" id="fname" name="fname" value="John" disabled>
+```
+
+---
+
+### **4. `size`**
+- Giriş alanının genişliğini (karakter cinsinden) ayarlar. Varsayılan değer 20'dir.
+```html
+<input type="text" id="fname" name="fname" size="50">
+```
+
+---
+
+### **5. `maxlength`**
+- Giriş alanına girilebilecek maksimum karakter sayısını belirler.
+```html
+<input type="text" id="pin" name="pin" maxlength="4">
+```
+
+---
+
+### **6. `min` ve `max`**
+- Giriş için minimum ve maksimum değerleri belirler. Sayısal ve tarih türleriyle çalışır.
+```html
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+```
+
+---
+
+### **7. `multiple`**
+- Birden fazla değer seçimine izin verir (ör. dosya veya e-posta).
+```html
+<input type="file" id="files" name="files" multiple>
+```
+
+---
+
+### **8. `pattern`**
+- Giriş değerini bir düzenli ifadeye göre kontrol eder.
+```html
+<input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+```
+
+---
+
+### **9. `placeholder`**
+- Kullanıcıya örnek giriş veya açıklama gösterir.
+```html
+<input type="tel" id="phone" name="phone" placeholder="123-45-678">
+```
+
+---
+
+### **10. `required`**
+- Giriş alanının doldurulmasını zorunlu kılar.
+```html
+<input type="text" id="username" name="username" required>
+```
+
+---
+
+### **11. `step`**
+- Sayısal giriş için geçerli adımları belirler.
+```html
+<input type="number" id="points" name="points" step="3">
+```
+
+---
+
+### **12. `autofocus`**
+- Sayfa yüklendiğinde giriş alanına otomatik odaklanmayı sağlar.
+```html
+<input type="text" id="fname" name="fname" autofocus>
+```
+
+---
+
+### **13. `height` ve `width`**
+- Bir `<input type="image">` elemanının boyutlarını belirler.
+```html
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+```
+
+---
+
+### **14. `list`**
+- Bir `<datalist>` elemanıyla ilişkilendirerek önceden tanımlanmış seçenekler sunar.
+```html
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist>
+```
+
+---
+
+### **15. `autocomplete`**
+- Tarayıcının otomatik tamamlama özelliğini açar veya kapatır.
+```html
+<form autocomplete="on">
+  <input type="text" id="fname" name="fname">
+  <input type="email" id="email" name="email" autocomplete="off">
+</form>
+```
+
+---
+
+### **Önemli Notlar**
+- **Kombinasyonlar:** `min`, `max`, ve `step` gibi özellikler birlikte kullanılabilir.
+- **Doğrulama:** `pattern` ve `required` özellikleri giriş doğrulaması sağlar.
+- **Güvenlik:** Tarayıcı kısıtlamaları yeterli olmayabilir. Sunucu tarafında da doğrulama yapılmalıdır.
+
+Bu özet, HTML giriş elemanlarının temel özelliklerini anlamanızı sağlar. 😊
+-->
+
+  <input type="text" id="fname" name="fname" value="John">
+  <input type="text" id="fname" name="fname" value="John" readonly>
+  <input type="text" id="fname" name="fname" value="John" disabled>
+  <input type="text" id="fname" name="fname" size="50">
+  <input type="text" id="pin" name="pin" maxlength="4">
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="file" id="files" name="files" multiple>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678">
+  <input type="text" id="username" name="username" required>
+
+  <input type="number" id="points" name="points" step="3">
+
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+  <input type="text" id="fname" name="fname" autofocus>
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+  </datalist>
+  <form autocomplete="on">
+    <input type="text" id="fname" name="fname">
+    <input type="email" id="email" name="email" autocomplete="off">
+  </form>
+
+
+  <!--
+### HTML `<input>` Form* Özellikleri (Özet ve Çeviri)
+
+HTML'de **form** ve **girdi** elemanları, kullanıcı girişlerini sunucuya göndermek için birçok özelleştirme seçeneği sunar. İşte önemli form* özellikleri ve açıklamaları:
+
+---
+
+### **1. `form`**
+- Bir `<input>` elemanını bir `<form>` elemanına bağlar. 
+- `form` özelliğinin değeri, `<form>` elemanının `id` değerine eşit olmalıdır.
+
+**Örnek:**
+```html
+<form action="/action_page.php" id="form1">
+  <input type="text" name="fname">
+</form>
+<input type="text" name="lname" form="form1">
+```
+
+---
+
+### **2. `formaction`**
+- Form gönderildiğinde verilerin işleneceği URL'yi belirler.
+- `<input type="submit">` veya `<input type="image">` ile kullanılır.
+- `formaction`, `<form>` elemanındaki `action` özelliğini geçersiz kılar.
+
+**Örnek:**
+```html
+<form action="/default_action.php">
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/admin_action.php" value="Submit as Admin">
+</form>
+```
+
+---
+
+### **3. `formenctype`**
+- Verilerin nasıl kodlanacağını tanımlar (sadece `method="post"` ile çalışır).
+- `formenctype`, `<form>` elemanındaki `enctype` özelliğini geçersiz kılar.
+
+**Örnek:**
+```html
+<form action="/upload.asp" method="post">
+  <input type="submit" value="Default Encoding">
+  <input type="submit" formenctype="multipart/form-data" value="Multipart Encoding">
+</form>
+```
+
+---
+
+### **4. `formmethod`**
+- Form verilerinin gönderiminde kullanılacak HTTP yöntemini (`get` veya `post`) belirler.
+- `formmethod`, `<form>` elemanındaki `method` özelliğini geçersiz kılar.
+
+**Örnek:**
+```html
+<form action="/action_page.php" method="get">
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+```
+
+---
+
+### **5. `formtarget`**
+- Form gönderiminden sonra alınan yanıtın hangi pencerede gösterileceğini tanımlar.
+- `formtarget`, `<form>` elemanındaki `target` özelliğini geçersiz kılar.
+
+**Değerler:**
+| **Değer**   | **Açıklama**                        |
+|-------------|-------------------------------------|
+| `_blank`    | Yeni sekme veya pencerede açılır    |
+| `_self`     | Aynı sekmede açılır (varsayılan)    |
+| `_parent`   | Üst çerçevede açılır                |
+| `_top`      | Tüm pencereyi kapsar               |
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Open in New Tab">
+</form>
+```
+
+---
+
+### **6. `formnovalidate`**
+- Formun doğrulama yapmadan gönderilmesini sağlar.
+- Sadece `<input type="submit">` ile çalışır.
+
+**Örnek:**
+```html
+<form action="/action_page.php">
+  <input type="email" name="email" required>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate value="Submit Without Validation">
+</form>
+```
+
+---
+
+### **7. `novalidate`**
+- `<form>` elemanına ait bir özelliktir.
+- Formdaki tüm girişlerin doğrulama yapılmadan gönderilmesini sağlar.
+
+**Örnek:**
+```html
+<form action="/action_page.php" novalidate>
+  <input type="email" name="email" required>
+  <input type="submit" value="Submit">
+</form>
+```
+
+---
+
+### **Önemli Notlar**
+- **`formaction`, `formenctype`, `formmethod`, ve `formtarget`** sadece `<input type="submit">` veya `<input type="image">` ile çalışır.
+- **Doğrulama:** `formnovalidate` veya `novalidate` kullanıldığında tarayıcı giriş doğrulamasını atlar. Ancak, sunucu tarafında da doğrulama yapılmalıdır.
+
+---
+
+### **Sonuç**
+HTML form* özellikleri, form elemanlarını esnek ve özelleştirilebilir hale getirir. Bu özellikler, birden fazla form işlemi gerçekleştirmek veya form verilerinin işlenme şeklini kontrol etmek için kullanışlıdır. 😊
+-->
+
+  <form action="/action_page.php" id="form1">
+    <input type="text" name="fname">
+  </form>
+  <input type="text" name="lname" form="form1">
+
+  <form action="/upload.asp" method="post">
+    <input type="submit" value="Default Encoding">
+    <input type="submit" formenctype="multipart/form-data" value="Multipart Encoding">
+  </form>
+
+  <form action="/action_page.php" method="get">
+    <input type="submit" value="Submit using GET">
+    <input type="submit" formmethod="post" value="Submit using POST">
+  </form>
+
+  <form action="/action_page.php">
+    <input type="submit" value="Submit">
+    <input type="submit" formtarget="_blank" value="Open in New Tab">
+  </form>
+
+  <!--kontrol et-->
+  <form action="/action_page.php">
+    <input type="submit" value="Submit">
+    <input type="submit" formtarget="_blank" value="Open in New Tab">
+  </form>
+
+  <form action="/action_page.php" novalidate>
+    <input type="email" name="email" required>
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <!--
+
+  ### HTML Canvas Grafikleri (Özet ve Çeviri)
+
+HTML `<canvas>` elemanı, JavaScript ile web sayfasında grafikler çizmek için kullanılır.
+
+---
+
+### **HTML Canvas Nedir?**
+- `<canvas>` elemanı grafik çizmek için bir **konteynerdir**.
+- Grafik çizmek için **JavaScript** gereklidir.
+- Daireler, kutular, metinler, görüntüler gibi çeşitli şekiller çizmek için kullanılır.
+- Tüm büyük tarayıcılar tarafından desteklenir.
+
+---
+
+### **Canvas Temel Kullanımı**
+
+- **Canvas Tanımlama:**
+```html
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+```
+  - **`id`:** Canvas'ı JavaScript içinde referans almak için.
+  - **`width` ve `height`:** Canvas boyutlarını belirler.
+  - **`style`:** Örneğin, kenarlık eklemek için kullanılır.
+
+---
+
+### **Canvas ile Grafik Çizme**
+
+Canvas üzerinde çizim yapmak için JavaScript kodu eklenir. İşte bazı temel örnekler:
+
+#### **1. Çizgi Çizme**
+```javascript
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0); // Başlangıç noktası
+ctx.lineTo(200, 100); // Bitiş noktası
+ctx.stroke(); // Çizim işlemi
+```
+
+#### **2. Daire Çizme**
+```javascript
+var ctx = document.getElementById("myCanvas").getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI); // x, y, yarıçap, başlangıç ve bitiş açıları
+ctx.stroke();
+```
+
+#### **3. Metin Çizme**
+- **Dolu Metin:**
+```javascript
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50); // Metin, x ve y koordinatları
+```
+- **Çizgili Metin:**
+```javascript
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 10, 50);
+```
+
+#### **4. Lineer (Düz) Gradyan**
+```javascript
+var ctx = document.getElementById("myCanvas").getContext("2d");
+var grd = ctx.createLinearGradient(0, 0, 200, 0); // Gradyan başlangıç ve bitiş noktaları
+grd.addColorStop(0, "red"); // Renk başlangıcı
+grd.addColorStop(1, "white"); // Renk bitişi
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80); // Gradyanı bir dikdörtgen içine uygula
+```
+
+#### **5. Dairesel Gradyan**
+```javascript
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100); // İç ve dış daire koordinatları
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+```
+
+#### **6. Görsel Çizme**
+```javascript
+var ctx = document.getElementById("myCanvas").getContext("2d");
+var img = document.getElementById("scream"); // Görüntü referansı
+ctx.drawImage(img, 10, 10); // Görseli canvas üzerine yerleştir
+```
+
+---
+
+### **Önemli Notlar**
+1. `<canvas>` elemanı tek başına bir şey görüntülemez. JavaScript kullanılarak grafik oluşturulmalıdır.
+2. Boyutları ve stili belirtilmezse varsayılan olarak **300x150 piksel** boyutlarındadır ve kenarlığı yoktur.
+3. Canvas, **çizimler için bir alan** sağlar, DOM elemanları içermez. Çizimler yalnızca JavaScript ile kontrol edilir.
+
+---
+
+### **Canvas Kullanım Alanları**
+- Grafikler ve şekiller çizmek
+- Oyun geliştirme
+- Dinamik veri görselleştirme
+- Görseller üzerinde işlem yapma
+
+### **Sonuç**
+Canvas, HTML ve JavaScript kullanarak dinamik grafikler oluşturmak için güçlü bir araçtır. Ancak, grafiklerin doğru çalışması için JavaScript'in aktif olarak kullanılması gereklidir.
+-->
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+  <script>
+    //çizgi
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0); // Başlangıç noktası
+    ctx.lineTo(200, 100); // Bitiş noktası
+    ctx.stroke(); // Çizim işlemi
+
+    //daire
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI); // x, y, yarıçap, başlangıç ve bitiş açıları
+    ctx.stroke();
+
+    //dolu metin kontrol et
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World", 10, 50); // Metin, x ve y koordinatları
+
+    //Çizgili Metin: kontrol et
+    ctx.font = "30px Arial";
+    ctx.strokeText("Hello World", 10, 50);
+
+    //4. Lineer (Düz) Gradyan
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    var grd = ctx.createLinearGradient(0, 0, 200, 0); // Gradyan başlangıç ve bitiş noktaları
+    grd.addColorStop(0, "red"); // Renk başlangıcı
+    grd.addColorStop(1, "white"); // Renk bitişi
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80); // Gradyanı bir dikdörtgen içine uygula
+
+
+    //5. Dairesel Gradyan
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100); // İç ve dış daire koordinatları
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+
+
+    //6. Görsel Çizme
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    var img = document.getElementById("scream"); // Görüntü referansı
+    ctx.drawImage(img, 10, 10); // Görseli canvas üzerine yerleştir
+
+
+  </script>
+
+  <!--
+### **HTML SVG Grafikleri (Özet ve Çeviri)**
+
+**SVG (Scalable Vector Graphics)**, vektör tabanlı grafikler oluşturmak için kullanılan XML tabanlı bir dildir. İşte SVG'nin temel özellikleri ve kullanımı:
+
+---
+
+### **SVG Nedir?**
+- **SVG'nin açılımı:** Scalable Vector Graphics
+- **Vektör tabanlı grafikler** tanımlar ve ölçeklendirilebilir.
+- **Kalite kaybı olmaz**: Yakınlaştırıldığında veya yeniden boyutlandırıldığında kalite bozulmaz.
+- **XML formatında** tanımlanır.
+- **Animasyon destekler.**
+- **CSS, DOM, XSL ve JavaScript** ile entegre çalışır.
+- **W3C tarafından önerilmiştir.**
+- Tüm modern tarayıcılar tarafından desteklenir.
+
+---
+
+### **SVG'nin Temel Kullanımı**
+SVG grafikleri `<svg>` etiketi ile tanımlanır. Bu etiket, yollar, dikdörtgenler, daireler, çokgenler, metinler ve daha fazlasını çizmek için çeşitli yöntemler sunar.
+
+---
+
+### **SVG ile Grafik Çizme Örnekleri**
+
+#### **1. Daire Çizimi**
+```html
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+```
+- **`cx`, `cy`**: Dairenin merkezi koordinatları.
+- **`r`**: Yarıçap.
+- **`stroke`**: Çerçeve rengi.
+- **`fill`**: Daire dolgu rengi.
+
+---
+
+#### **2. Dikdörtgen Çizimi**
+```html
+<svg width="400" height="120">
+  <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+</svg>
+```
+- **`x`, `y`**: Dikdörtgenin başlangıç noktası.
+- **`width`, `height`**: Genişlik ve yükseklik.
+
+---
+
+#### **3. Yuvarlatılmış Köşeli ve Saydam Dikdörtgen**
+```html
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+```
+- **`rx`, `ry`**: Köşelerin yuvarlatılma miktarı.
+- **`opacity`**: Saydamlık değeri (0 ile 1 arasında).
+
+---
+
+#### **4. Çokgen (Yıldız) Çizimi**
+```html
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+```
+- **`points`**: Çokgenin köşe noktalarının koordinatları.
+
+---
+
+#### **5. Gradyan ile Elips ve Metin**
+```html
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="red" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+</svg>
+```
+- **Gradyan (Gradient):** Renk geçişlerini tanımlar.
+- **`text`:** SVG içinde metin ekler.
+
+---
+
+### **SVG ve Canvas Arasındaki Farklar**
+
+| **Özellik**                | **SVG**                                   | **Canvas**                                  |
+|----------------------------|-------------------------------------------|---------------------------------------------|
+| **Çözünürlük**             | Bağımsız                                | Piksel tabanlı                              |
+| **Etkinlik İşleyicileri**  | Destekler                                | Desteklemez                                 |
+| **Metin İşleme**           | İyi                                      | Zayıf                                       |
+| **Yeniden Çizim**          | Yavaş (karmaşıksa)                      | Tüm sahne yeniden çizilir                   |
+| **Kullanım Alanı**         | Grafikler, haritalar, vektörler          | Oyunlar ve grafik yoğun uygulamalar         |
+
+---
+
+### **Sonuç**
+- **SVG:** Vektör tabanlı, çözünürlük bağımsız, dinamik grafikler için idealdir.
+- **Canvas:** Piksel tabanlı, yüksek performans gerektiren oyunlar ve yoğun grafik işlemleri için uygundur. 
+
+SVG, tarayıcıda kaliteli, ölçeklenebilir grafikler oluşturmak için mükemmel bir çözümdür. 😊
+-->
+
+
+  <!--
+### **HTML Multimedia (Çeviri ve Düzenlenmiş Özet)**
+
+Web üzerinde **multimedya**, ses, müzik, videolar, filmler ve animasyonlar gibi çeşitli medya içeriklerini ifade eder.
+
+---
+
+### **Multimedya Nedir?**
+- Multimedya, duyabileceğiniz veya görebileceğiniz her şeydir:
+  - Görseller, müzik, ses, videolar, filmler, animasyonlar, vb.
+- Web sayfalarında, çeşitli multimedya öğeleri sıkça kullanılır.
+
+---
+
+### **Tarayıcı Desteği**
+- İlk web tarayıcıları yalnızca **metin destekliyordu**.
+- Daha sonra renkler, yazı tipleri, görseller ve multimedya desteği eklendi.
+- Günümüzde tarayıcılar ses, video ve animasyon içeriklerini destekler.
+
+---
+
+### **Multimedya Formatları**
+- Multimedya öğeleri medya dosyalarında saklanır ve dosya uzantıları ile tanımlanır.
+- Yaygın uzantılar: `.wav`, `.mp3`, `.mp4`, `.wmv`, `.avi`, vb.
+
+---
+
+### **Yaygın Video Formatları**
+
+| **Format**   | **Dosya Uzantısı** | **Açıklama**                                                                 |
+|--------------|--------------------|-------------------------------------------------------------------------------|
+| **MPEG**     | `.mpg`, `.mpeg`    | İlk popüler video formatı. HTML'de desteklenmez.                             |
+| **AVI**      | `.avi`             | Microsoft tarafından geliştirildi. Tarayıcılarda desteklenmez.               |
+| **WMV**      | `.wmv`             | Microsoft formatı. Windows üzerinde iyi çalışır, ancak tarayıcılarda desteklenmez. |
+| **QuickTime**| `.mov`             | Apple tarafından geliştirildi. Tarayıcılarda desteklenmez.                   |
+| **Flash**    | `.swf`, `.flv`     | Tarayıcılarda oynatmak için eklenti gerektirir.                              |
+| **Ogg**      | `.ogg`             | HTML standardı tarafından desteklenir.                                       |
+| **WebM**     | `.webm`            | HTML standardı tarafından desteklenir.                                       |
+| **MP4**      | `.mp4`             | Tüm tarayıcılarda desteklenir ve YouTube tarafından önerilir.                |
+
+**Not:** HTML standardı yalnızca **MP4**, **WebM**, ve **Ogg** formatlarını destekler.
+
+---
+
+### **Yaygın Ses Formatları**
+
+| **Format**   | **Dosya Uzantısı** | **Açıklama**                                                                 |
+|--------------|--------------------|-------------------------------------------------------------------------------|
+| **MIDI**     | `.mid`, `.midi`    | Elektronik müzik cihazları için. Tarayıcılarda desteklenmez.                  |
+| **RealAudio**| `.rm`, `.ram`      | Streaming için geliştirilmiştir. Tarayıcılarda desteklenmez.                  |
+| **WMA**      | `.wma`             | Microsoft formatı. Tarayıcılarda desteklenmez.                                |
+| **AAC**      | `.aac`             | Apple iTunes formatı. Tarayıcılarda desteklenmez.                             |
+| **WAV**      | `.wav`             | Windows, Macintosh ve Linux üzerinde desteklenir. HTML standardı tarafından desteklenir. |
+| **Ogg**      | `.ogg`             | HTML standardı tarafından desteklenir.                                       |
+| **MP3**      | `.mp3`             | Tüm tarayıcılar tarafından desteklenir. Küçük dosya boyutuyla yüksek kalite sunar. |
+| **MP4**      | `.mp4`             | Hem video hem ses formatı olarak kullanılabilir. Tüm tarayıcılar tarafından desteklenir. |
+
+**Not:** HTML standardı yalnızca **MP3**, **WAV**, ve **Ogg** ses formatlarını destekler.
+
+---
+
+### **Sonuç**
+- **Video İçin Tercih Edilen Formatlar:**
+  - MP4 (geniş destek ve yüksek kalite)
+  - WebM ve Ogg (HTML uyumlu alternatifler)
+
+- **Ses İçin Tercih Edilen Formatlar:**
+  - MP3 (küçük boyut, yüksek kalite)
+  - WAV ve Ogg (HTML uyumlu alternatifler)
+
+Multimedya, modern web sayfalarını daha dinamik ve etkileşimli hale getirir. 😊
+-->
+
+  <!--
+
+  ### **HTML Video (Çeviri ve Özet)**
+
+HTML'de **<video>** etiketi, bir web sayfasında video oynatmak için kullanılır.
+
+---
+
+### **<video> Etiketi Kullanımı**
+Bir video göstermek için aşağıdaki yapı kullanılır:
+
+```html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+```
+
+- **`controls`:** Video oynatma, durdurma, ses kontrolü gibi özellikleri ekler.
+- **`width` ve `height`:** Video boyutlarını ayarlar. (Sayfa titremesini önlemek için önerilir.)
+- **`<source>`:** Alternatif video dosyalarını belirler. Tarayıcı, desteklediği ilk formatı kullanır.
+- **Desteklenmeyen tarayıcılar için:** `<video>` etiketi arasındaki metin görüntülenir.
+
+---
+
+### **Otomatik Oynatma (Autoplay)**
+Videonun otomatik başlaması için `autoplay` özelliği eklenir:
+
+```html
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>
+```
+
+- **Chromium tarayıcılar:** Çoğu durumda otomatik oynatmayı engeller. Ancak, `muted` (sessiz) otomatik oynatma her zaman çalışır:
+```html
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+```
+
+---
+
+### **Desteklenen Video Formatları**
+HTML standardı şu video formatlarını destekler:
+- **MP4:** `video/mp4`
+- **WebM:** `video/webm`
+- **Ogg:** `video/ogg`
+
+---
+
+### **Tarayıcı Desteği**
+| **Tarayıcı** | **MP4** | **WebM** | **Ogg** |
+|--------------|---------|----------|---------|
+| **Edge**     | Evet    | Evet     | Evet    |
+| **Chrome**   | Evet    | Evet     | Evet    |
+| **Firefox**  | Evet    | Evet     | Evet    |
+| **Safari**   | Evet    | Evet     | Hayır   |
+| **Opera**    | Evet    | Evet     | Evet    |
+
+---
+
+### **JavaScript ile Video Kontrolü**
+Videolar, JavaScript ile kontrol edilebilir:
+- **Metotlar:** Yükleme, oynatma, durdurma.
+- **Özellikler:** Süre, ses seviyesi.
+- **Olaylar:** Oynatma başladığında, durdurulduğunda vb.
+
+Örnek:
+```javascript
+var video = document.getElementById("myVideo");
+video.play();  // Videoyu oynat
+video.pause(); // Videoyu durdur
+```
+
+---
+
+### **Video ile İlgili HTML Etiketleri**
+| **Etiket**   | **Açıklama**                                             |
+|--------------|----------------------------------------------------------|
+| `<video>`    | Bir video veya film tanımlar.                            |
+| `<source>`   | Video ve ses için alternatif medya dosyalarını tanımlar. |
+| `<track>`    | Video oynatıcıda altyazı gibi metin izlerini tanımlar.   |
+
+---
+
+### **Sonuç**
+- **MP4:** En yaygın desteklenen format (tüm tarayıcılarda çalışır).
+- Videoların kontrolünü artırmak için JavaScript kullanılabilir.
+- Multimedya destekli tarayıcılar, modern web deneyimlerini geliştirmek için oldukça güçlüdür. 😊
+
+-->
+
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <video width="320" height="240" autoplay>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  </video>
+
+  <video width="320" height="240" autoplay muted>
+    <source src="movie.mp4" type="video/mp4">
+  </video>
+
+  <video width="320" height="240" autoplay muted>
+    <source src="movie.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    video.play();  // Videoyu oynat
+    video.pause(); // Videoyu durdur
+
+  </script>
+  <!--
+### **HTML Audio (Çeviri ve Özet)**
+
+HTML'de **<audio>** etiketi, bir web sayfasında ses dosyası oynatmak için kullanılır.
+
+---
+
+### **<audio> Etiketi Kullanımı**
+Bir ses dosyasını oynatmak için aşağıdaki yapı kullanılır:
+
+```html
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+- **`controls`:** Ses kontrolü, oynatma, durdurma ve ses seviyesi gibi özellikler ekler.
+- **`<source>`:** Alternatif ses dosyalarını tanımlar. Tarayıcı, desteklediği ilk formatı kullanır.
+- **Desteklenmeyen tarayıcılar için:** `<audio>` etiketi arasındaki metin görüntülenir.
+
+---
+
+### **Otomatik Oynatma (Autoplay)**
+Bir ses dosyasının otomatik başlaması için `autoplay` özelliği kullanılır:
+
+```html
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+```
+
+- **Chromium tarayıcılar:** Çoğu durumda otomatik oynatmayı engeller. Ancak, `muted` (sessiz) otomatik oynatma her zaman çalışır:
+
+```html
+<audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+</audio>
+```
+
+---
+
+### **Desteklenen Ses Formatları**
+HTML şu ses formatlarını destekler:
+- **MP3:** `audio/mpeg`
+- **WAV:** `audio/wav`
+- **OGG:** `audio/ogg`
+
+---
+
+### **Tarayıcı Desteği**
+| **Tarayıcı** | **MP3** | **WAV** | **OGG** |
+|--------------|---------|---------|---------|
+| **Edge/IE**  | Evet    | Evet*   | Evet*   |
+| **Chrome**   | Evet    | Evet    | Evet    |
+| **Firefox**  | Evet    | Evet    | Evet    |
+| **Safari**   | Evet    | Evet    | Hayır   |
+| **Opera**    | Evet    | Evet    | Evet    |
+
+*Edge 79 sürümünden itibaren.
+
+---
+
+### **JavaScript ile Ses Kontrolü**
+HTML DOM, ses dosyalarını kontrol etmek için yöntemler, özellikler ve olaylar sağlar:
+- **Metotlar:** Yükleme, oynatma, durdurma.
+- **Özellikler:** Süre ve ses seviyesi ayarlama.
+- **Olaylar:** Ses başladığında, duraklatıldığında vb. bildirim sağlar.
+
+---
+
+### **HTML Audio Etiketleri**
+| **Etiket**  | **Açıklama**                                      |
+|-------------|---------------------------------------------------|
+| `<audio>`   | Ses içeriğini tanımlar.                          |
+| `<source>`  | Alternatif medya kaynaklarını tanımlar.           |
+
+---
+
+### **Sonuç**
+- **MP3:** En yaygın ses formatı (tüm tarayıcılarda çalışır).
+- HTML, ses oynatma kontrollerini kolayca uygulamayı sağlar.
+- Ses öğeleri, modern web deneyimlerini daha interaktif hale getirir. 🎵
+-->
+
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <audio controls autoplay>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls autoplay muted>
+    <source src="horse.ogg" type="audio/ogg">
+  </audio>
+
+
+  <!--
+### **HTML Plug-ins (Çeviri ve Özet)**
+
+**Plug-ins**: Tarayıcıların standart işlevselliğini genişleten bilgisayar programlarıdır. Ancak, modern tarayıcılar birçok eski plug-in türünü desteklememektedir.
+
+---
+
+### **Plug-ins Kullanım Alanları**
+Eskiden plug-ins aşağıdaki amaçlarla kullanılıyordu:
+- Java applet çalıştırmak
+- Microsoft ActiveX kontrollerini çalıştırmak
+- Flash filmleri görüntülemek
+- Haritalar göstermek
+- Virüs taramak
+- Banka kimlik doğrulaması yapmak
+
+**Uyarı:** 
+- Çoğu tarayıcı artık Java appletlerini ve plug-ins desteğini durdurmuştur.
+- ActiveX kontrolleri hiçbir tarayıcıda desteklenmemektedir.
+- Shockwave Flash desteği modern tarayıcılarda kapatılmıştır.
+
+---
+
+### **<object> Etiketi**
+**<object>** etiketi tüm tarayıcılarda desteklenir ve HTML belgelerinde gömülü bir nesne tanımlar.
+
+**Kullanımı:**
+- Plug-ins, PDF okuyucular, Flash Player gibi öğeleri eklemek için kullanılır.
+- HTML içinde başka bir HTML veya medya öğesi eklemek için de kullanılabilir.
+
+**Örnekler:**
+1. HTML dosyası eklemek:
+   ```html
+   <object width="100%" height="500px" data="snippet.html"></object>
+   ```
+
+2. Resim eklemek:
+   ```html
+   <object data="audi.jpeg"></object>
+   ```
+
+---
+
+### **<embed> Etiketi**
+**<embed>** etiketi, HTML belgelerinde gömülü bir nesne tanımlamak için kullanılır ve tüm modern tarayıcılarda desteklenir. 
+
+- **HTML5 ile resmi olarak standarda eklenmiştir.**
+- Kapanış etiketi **yoktur** ve alternatif metin içeremez.
+
+**Örnekler:**
+1. Resim eklemek:
+   ```html
+   <embed src="audi.jpeg">
+   ```
+
+2. HTML dosyası eklemek:
+   ```html
+   <embed width="100%" height="500px" src="snippet.html">
+   ```
+
+---
+
+### **Sonuç**
+- **<object>** ve **<embed>** etiketleri modern HTML'de plug-ins yerine gömülü içerikler için kullanılmaktadır.
+- Eski plug-in destekleri (Java, ActiveX, Flash) artık büyük ölçüde kaldırılmıştır.
+- Bu etiketler, HTML içinde multimedya ve diğer gömülü içerikler eklemek için güçlü araçlardır.
+-->
+  <!--test et-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0LCA2v8KG-c?si=s1qprgGv91zFqX_B"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <object width="100%" height="500px" data="snippet.html"></object>
+  <object data="audi.jpeg"></object>
+  <embed src="audi.jpeg">
+  <embed width="100%" height="500px" src="snippet.html">
+
+
+  <!--
+### **HTML YouTube Videoları (Çeviri ve Özet)**
+
+HTML'de video oynatmanın en kolay yolu **YouTube** videolarını kullanmaktır.
+
+---
+
+### **YouTube Videolarını HTML'de Oynatmak**
+1. **Videoyu YouTube'a yükleyin.**
+2. **Video kimliğini (örneğin, `tgbNymZ7vqY`) not alın.**
+3. **<iframe> etiketi** kullanarak videoyu sayfanıza yerleştirin.
+4. **src** özelliğine video URL'sini ekleyin.
+5. **width** ve **height** özellikleri ile oynatıcı boyutlarını belirleyin.
+
+**Örnek:**
+```html
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+```
+
+---
+
+### **Ekstra Özellikler**
+#### **1. Otomatik Oynatma (Autoplay) ve Sessiz Başlama (Mute)**
+- **Autoplay:** Videonun otomatik başlamasını sağlar. 
+  ```html
+  autoplay=1
+  ```
+- **Mute:** Videoyu sessiz başlatmak için:
+  ```html
+  mute=1
+  ```
+- **Örnek:**
+  ```html
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+  </iframe>
+  ```
+
+#### **2. Oynatma Listesi (Playlist)**
+Birden fazla video oynatmak için URL’ye virgülle ayrılmış video kimliklerini ekleyebilirsiniz.
+
+#### **3. Döngü (Loop)**
+Videonun sonsuz döngüde oynatılmasını sağlamak için:
+- **loop=1**: Sonsuz döngü.
+- **loop=0**: Sadece bir kez oynatılır (varsayılan).
+- **Örnek:**
+  ```html
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+  </iframe>
+  ```
+
+#### **4. Kontrolleri Gizleme (Controls)**
+Video kontrol çubuğunu gizlemek veya göstermek için:
+- **controls=0:** Kontroller görünmez.
+- **controls=1:** Kontroller görünür (varsayılan).
+- **Örnek:**
+  ```html
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+  </iframe>
+  ```
+
+---
+
+### **Sonuç**
+- **<iframe> etiketi**, YouTube videolarını web sayfalarına kolayca entegre etmeyi sağlar.
+- Ekstra parametrelerle (autoplay, mute, loop, controls) videoların davranışını özelleştirebilirsiniz.
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0LCA2v8KG-c?si=c8Lj_BqKrCbsPifQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!--
+### **HTML Geolocation API (Çeviri ve Özet)**
+
+**HTML Geolocation API**, kullanıcıların coğrafi konumlarını almayı sağlar.
+
+---
+
+### **Kullanıcının Konumunu Belirleme**
+- **Amaç:** Kullanıcının enlem ve boylam gibi coğrafi konum bilgilerini almak.
+- **Güvenlik:** Konum bilgisi, kullanıcının onayı olmadan alınamaz.
+- **Not:** GPS'e sahip cihazlarda (örneğin, akıllı telefonlar) daha hassas çalışır.
+
+---
+
+### **Tarayıcı Desteği**
+- **Geolocation API**, **HTTPS** bağlantısında çalışır. HTTP üzerinde kullanılamaz.
+- Desteklenen tarayıcılar: Chrome, Firefox, Safari, Edge, Opera.
+
+---
+
+### **Geolocation Kullanımı**
+**getCurrentPosition()** metodu kullanılarak konum bilgisi alınır.
+
+#### **Örnek Kod:**
+```html
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+```
+
+**Nasıl Çalışır:**
+1. **Geolocation desteği kontrol edilir.** Eğer destekleniyorsa `getCurrentPosition()` çalışır.
+2. **Koordinat bilgileri alındığında:** `showPosition()` fonksiyonu çağrılır.
+3. Latitude (enlem) ve Longitude (boylam) bilgileri ekrana yazdırılır.
+
+---
+
+### **Hataları ve Reddetmeleri Ele Alma**
+Hataları yönetmek için `getCurrentPosition()` metodunun ikinci parametresi kullanılır.
+
+#### **Hata Yönetimi Örneği:**
+```javascript
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred.";
+      break;
+  }
+}
+```
+
+**Olası Hatalar:**
+1. **PERMISSION_DENIED:** Kullanıcı izin vermedi.
+2. **POSITION_UNAVAILABLE:** Konum bilgisi alınamadı.
+3. **TIMEOUT:** İstek zaman aşımına uğradı.
+4. **UNKNOWN_ERROR:** Bilinmeyen bir hata oluştu.
+
+---
+
+### **Dönen Veriler**
+- **coords.latitude:** Enlem.
+- **coords.longitude:** Boylam.
+- **coords.accuracy:** Konumun doğruluğu.
+- **coords.altitude (varsa):** Deniz seviyesinden yükseklik.
+- **coords.heading (varsa):** Kuzeyden saat yönüne derece olarak yön.
+- **coords.speed (varsa):** Hız (m/s).
+
+---
+
+### **Diğer Geolocation Metotları**
+1. **watchPosition():**
+   - Kullanıcının hareketine göre sürekli güncel konum döner (örneğin, araba GPS'inde).
+   - Örnek:
+     ```javascript
+     navigator.geolocation.watchPosition(showPosition);
+     ```
+2. **clearWatch():**
+   - `watchPosition()` metodunu durdurur.
+
+---
+
+### **Sonuç**
+- **Geolocation API**, kullanıcının coğrafi konumunu almak için güçlü bir araçtır.
+- Kullanıcı onayı, HTTPS gereksinimi ve hata yönetimi gibi güvenlik önlemleri içerir.
+
+-->
+
+<script>
+  const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred.";
+      break;
+  }
+}
+
+
+navigator.geolocation.watchPosition(showPosition);
+
+</script>
+
+
+  <!--
+### **HTML Drag and Drop API (Özet)**
+
+**Drag and Drop**, bir öğeyi tutup başka bir konuma sürükleme işlemidir. HTML'de herhangi bir öğe sürüklenebilir ve bırakılabilir.
+
+---
+
+### **Desteklenen Tarayıcılar**
+- Drag and Drop API, modern tarayıcılar tarafından desteklenir:
+  - Chrome 4.0+
+  - Edge 9.0+
+  - Firefox 3.5+
+  - Safari 6.0+
+  - Opera 12.0+
+
+---
+
+### **Temel Drag and Drop İşlemi**
+1. **Sürüklenebilir Bir Öğeyi Belirleme:**
+   - `draggable="true"` özelliği eklenir.
+   ```html
+   <img id="drag1" src="img_logo.gif" draggable="true">
+   ```
+
+2. **Sürükleme İşlemi Başlatma (`ondragstart` ve `setData`):**
+   - Sürükleme sırasında taşınacak veri belirlenir.
+   ```javascript
+   function drag(ev) {
+     ev.dataTransfer.setData("text", ev.target.id);
+   }
+   ```
+
+3. **Öğe Nereye Bırakılabilir (`ondragover` ve `preventDefault`):**
+   - Sürüklenen öğenin bırakılacağı bölgeyi belirler. Varsayılan bırakma işlemi engellenir.
+   ```javascript
+   function allowDrop(ev) {
+     ev.preventDefault();
+   }
+   ```
+
+4. **Bırakma İşlemi (`ondrop` ve `appendChild`):**
+   - Sürüklenen öğe belirtilen alana bırakılır.
+   ```javascript
+   function drop(ev) {
+     ev.preventDefault();
+     var data = ev.dataTransfer.getData("text");
+     ev.target.appendChild(document.getElementById(data));
+   }
+   ```
+
+---
+
+### **Örnek Kod:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:200px;height:200px;border:1px solid black;"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="100" height="50">
+
+</body>
+</html>
+```
+
+---
+
+### **Nasıl Çalışır?**
+1. **`dragstart`:** Sürüklenen öğenin bilgilerini (`id` gibi) alır.
+2. **`ondragover`:** Sürüklenen öğeyi bırakılacak alanda kabul eder.
+3. **`ondrop`:** Sürüklenen öğeyi belirlenen alana ekler.
+
+---
+
+### **Ek Özellikler**
+- **İki alan arasında taşıma:** Bir öğeyi farklı `<div>` alanlarına bırakabilirsiniz.
+- **Özel veriler ekleme:** `dataTransfer.setData()` ile başka veri tipleri de taşınabilir.
+
+Bu özellik, kullanıcı etkileşimini artırmak için yaygın olarak kullanılır.
+-->
+
+<img id="drag1" src="img_logo.gif" draggable="true">
+
+<script>
+  function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+
+</script>
+
+  <!--
+### **HTML Web Storage API (Özet)**
+
+HTML Web Storage, kullanıcı verilerini tarayıcıda yerel olarak saklamayı sağlar. Çerezlere kıyasla daha güvenli, daha hızlıdır ve daha büyük veri saklama kapasitesi sunar.
+
+---
+
+### **Web Storage Nedir?**
+- **Veri Saklama:** Kullanıcı verilerini tarayıcıda yerel olarak saklar.
+- **Çerezlerden Farkı:** Çerezler sunucuya gönderilirken, web storage verileri yalnızca tarayıcıda tutulur.
+- **Kapasite:** Çerezlere göre daha fazla (en az 5MB) veri saklanabilir.
+- **Domain Bazlı:** Aynı domain'den gelen tüm sayfalar aynı veriye erişebilir.
+
+---
+
+### **Desteklenen Tarayıcılar**
+- Chrome: 4.0+
+- Edge: 8.0+
+- Firefox: 3.5+
+- Safari: 4.0+
+- Opera: 11.5+
+
+---
+
+### **Web Storage Türleri**
+1. **`localStorage`:**
+   - Veriler tarayıcı kapatıldığında bile saklanır.
+   - Kalıcı veri saklama için kullanılır.
+
+   **Örnek:**
+   ```javascript
+   // Veri Sakla
+   localStorage.setItem("lastname", "Smith");
+
+   // Veri Al
+   document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+   ```
+
+   **Silme:**
+   ```javascript
+   localStorage.removeItem("lastname");
+   ```
+
+2. **`sessionStorage`:**
+   - Veriler yalnızca tarayıcı sekmesi açık kaldığı sürece saklanır.
+   - Tarayıcı sekmesi kapandığında veriler silinir.
+
+   **Örnek:**
+   ```javascript
+   if (sessionStorage.clickcount) {
+     sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+   } else {
+     sessionStorage.clickcount = 1;
+   }
+   document.getElementById("result").innerHTML =
+     "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+   ```
+
+---
+
+### **Özellikler**
+1. **Kontrol Edilebilirlik:**
+   - Tarayıcı desteği kontrol edilebilir:
+   ```javascript
+   if (typeof(Storage) !== "undefined") {
+     // Web storage destekleniyor
+   } else {
+     console.log("Web Storage desteklenmiyor.");
+   }
+   ```
+
+2. **Veri Tipleri:**
+   - Veriler her zaman **string** olarak saklanır.
+   - Sayılar gibi diğer tipler için dönüştürme yapılmalıdır.
+
+   **Örnek:**
+   ```javascript
+   localStorage.clickcount = Number(localStorage.clickcount) + 1;
+   ```
+
+---
+
+### **Web Storage Avantajları**
+- **Güvenlik:** Sunucuya gönderilmez, yalnızca tarayıcıda saklanır.
+- **Hız:** Daha hızlı veri erişimi sağlar.
+- **Kapasite:** Çerezlere göre daha fazla veri saklayabilir.
+
+**Not:** Web Storage, kullanıcı bazlı ayarlar, sayaçlar ve oturum bilgileri gibi birçok uygulamada kullanılabilir.
+-->
+
+  <script>
+    // Veri Sakla
+localStorage.setItem("lastname", "Smith");
+
+// Veri Al
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+localStorage.removeItem("lastname");
+
+if (sessionStorage.clickcount) {
+  sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+  sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML =
+  "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+
+  if (typeof(Storage) !== "undefined") {
+  // Web storage destekleniyor
+} else {
+  console.log("Web Storage desteklenmiyor.");
+}
+
+localStorage.clickcount = Number(localStorage.clickcount) + 1;
+
+
+  </script>
+
+  <!--
+### **HTML Web Workers API (Özet)**
+
+Web Workers, JavaScript'in arka planda çalışmasını sağlayarak web sayfasının performansını etkilemeden işlemler yapmasına olanak tanır.
+
+---
+
+### **Web Worker Nedir?**
+- **Arka Plan İşlemleri:** Web Worker, JavaScript'in arka planda çalışmasını sağlar.
+- **Sayfa Performansı:** Sayfanın etkileşimli kalmasını sağlar; kullanıcı tıklamaya, seçim yapmaya devam edebilir.
+- **Bağımsız Çalışma:** Web Worker, diğer scriptlerden bağımsız olarak çalışır.
+
+---
+
+### **Tarayıcı Desteği**
+- Chrome: 4.0+
+- Edge: 10.0+
+- Firefox: 3.5+
+- Safari: 4.0+
+- Opera: 11.5+
+
+---
+
+### **Web Worker Kullanımı**
+
+1. **Web Worker Destek Kontrolü:**
+   ```javascript
+   if (typeof(Worker) !== "undefined") {
+     // Web Worker destekleniyor
+   } else {
+     console.log("Web Worker desteklenmiyor.");
+   }
+   ```
+
+2. **Bir Web Worker Dosyası Oluşturma:**
+   - Örnek bir "demo_workers.js" dosyası:
+   ```javascript
+   var i = 0;
+
+   function timedCount() {
+     i += 1;
+     postMessage(i); // Mesajı HTML sayfasına gönder
+     setTimeout(timedCount, 500);
+   }
+
+   timedCount();
+   ```
+
+3. **Web Worker Nesnesi Oluşturma:**
+   - HTML'de bir Web Worker başlatma:
+   ```javascript
+   if (typeof(w) == "undefined") {
+     w = new Worker("demo_workers.js");
+   }
+
+   w.onmessage = function(event) {
+     document.getElementById("result").innerHTML = event.data;
+   };
+   ```
+
+4. **Web Worker'ı Durdurma:**
+   ```javascript
+   w.terminate(); // Çalışmayı durdurur
+   w = undefined; // Tekrar kullanılabilir hale getirir
+   ```
+
+---
+
+### **Tam Örnek Kod**
+- **HTML Dosyası:**
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <body>
+     <p>Count numbers: <output id="result"></output></p>
+     <button onclick="startWorker()">Start Worker</button>
+     <button onclick="stopWorker()">Stop Worker</button>
+
+     <script>
+     var w;
+
+     function startWorker() {
+       if (typeof(Worker) !== "undefined") {
+         if (typeof(w) == "undefined") {
+           w = new Worker("demo_workers.js");
+         }
+         w.onmessage = function(event) {
+           document.getElementById("result").innerHTML = event.data;
+         };
+       } else {
+         document.getElementById("result").innerHTML = "No Web Worker support.";
+       }
+     }
+
+     function stopWorker() {
+       w.terminate();
+       w = undefined;
+     }
+     </script>
+   </body>
+   </html>
+   ```
+
+- **demo_workers.js Dosyası:**
+   ```javascript
+   var i = 0;
+
+   function timedCount() {
+     i += 1;
+     postMessage(i);
+     setTimeout(timedCount, 500);
+   }
+
+   timedCount();
+   ```
+
+---
+
+### **Önemli Notlar**
+1. **DOM Erişimi:** Web Worker'lar `window`, `document`, ve `parent` objelerine erişemez.
+2. **Yoğun İşlemler:** CPU yoğun işlemler için uygundur, basit işlemler için gerekmez.
+3. **Mesajlaşma:** `postMessage()` ve `onmessage` yöntemleriyle iletişim kurulur. 
+
+Web Workers, özellikle uzun süren hesaplamalarda veya asenkron işlemlerde sayfa performansını korumak için idealdir.
+-->
+
+<script>
+  if (typeof(Worker) !== "undefined") {
+  // Web Worker destekleniyor
+} else {
+  console.log("Web Worker desteklenmiyor.");
+}
+
+//dosya oluşturma
+var i = 0;
+
+function timedCount() {
+  i += 1;
+  postMessage(i); // Mesajı HTML sayfasına gönder
+  setTimeout(timedCount, 500);
+}
+
+timedCount();
+
+//nesne oluşturma
+
+if (typeof(w) == "undefined") {
+  w = new Worker("demo_workers.js");
+}
+
+w.onmessage = function(event) {
+  document.getElementById("result").innerHTML = event.data;
+};
+
+w.terminate(); // Çalışmayı durdurur
+w = undefined; // Tekrar kullanılabilir hale getirir
+
+
+//workeri durdurma
+</script>
+w.terminate(); // Çalışmayı durdurur
+w = undefined; // Tekrar kullanılabilir hale getirir
+
+
+  <!--
+### **HTML SSE API (Server-Sent Events - Özet)**
+
+Server-Sent Events (SSE), bir web sayfasının otomatik olarak sunucudan güncellemeler almasını sağlar. Bu, örneğin **Facebook/Twitter güncellemeleri**, **borsa fiyatları**, **haber beslemeleri**, ve **spor sonuçları** gibi uygulamalar için kullanılır.
+
+---
+
+### **SSE Nedir?**
+- **Tek Yönlü Mesajlaşma:** Sunucudan tarayıcıya veri gönderimi yapılır.
+- **Otomatik Güncellemeler:** Sayfa, sunucudan otomatik olarak güncelleme alır. Eski yöntemlerde, güncellemeleri kontrol etmek için sürekli istek gönderilirdi.
+- **Örnek Kullanım Alanları:** Sosyal medya, finans, haber, spor uygulamaları.
+
+---
+
+### **Tarayıcı Desteği**
+- Chrome: 6.0+
+- Edge: 79.0+
+- Firefox: 6.0+
+- Safari: 5.0+
+- Opera: 11.5+
+
+---
+
+### **SSE Kullanımı**
+
+#### **1. İstemci-Side Kod (JavaScript)**
+SSE almak için `EventSource` nesnesi kullanılır:
+
+```javascript
+if (typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + "<br>";
+  };
+} else {
+  document.getElementById("result").innerHTML = "Sorry! No server-sent events support.";
+}
+```
+
+- **Açıklama:**
+  1. `EventSource` nesnesi, sunucudan veri almak için bir bağlantı kurar.
+  2. `onmessage` olayı, her veri güncellemesi aldığında çalışır.
+  3. Gelen veri, HTML'deki `result` id'li bir elemente eklenir.
+
+---
+
+#### **2. Sunucu-Side Kod**
+SSE kullanmak için sunucunun veri güncellemelerini doğru formatta göndermesi gerekir.
+
+- **PHP Örneği (`demo_sse.php`):**
+  ```php
+  <?php
+  header('Content-Type: text/event-stream');
+  header('Cache-Control: no-cache');
+
+  $time = date('r');
+  echo "data: The server time is: {$time}\n\n";
+  flush();
+  ?>
+  ```
+
+- **ASP (VB) Örneği (`demo_sse.asp`):**
+  ```asp
+  <%
+  Response.ContentType = "text/event-stream"
+  Response.Expires = -1
+  Response.Write("data: The server time is: " & now())
+  Response.Flush()
+  %>
+  ```
+
+- **Açıklama:**
+  1. `Content-Type` başlığı `text/event-stream` olarak ayarlanır.
+  2. Tarayıcıya gönderilecek veriler, `data:` ile başlar.
+  3. `flush()` metodu, verilerin hemen gönderilmesini sağlar.
+
+---
+
+### **EventSource Olayları**
+- **onopen:** Sunucuyla bağlantı kurulduğunda tetiklenir.
+- **onmessage:** Sunucudan bir mesaj alındığında tetiklenir.
+- **onerror:** Bağlantıda bir hata oluştuğunda tetiklenir.
+
+---
+
+### **Tam Örnek**
+
+#### **HTML ve JavaScript Kodu:**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Server-Sent Events</h2>
+  <div id="result">Waiting for updates...</div>
+
+  <script>
+    if (typeof(EventSource) !== "undefined") {
+      var source = new EventSource("demo_sse.php");
+      source.onmessage = function(event) {
+        document.getElementById("result").innerHTML += event.data + "<br>";
+      };
+    } else {
+      document.getElementById("result").innerHTML = "Sorry! No server-sent events support.";
+    }
+  </script>
+</body>
+</html>
+```
+
+#### **PHP Sunucu Kodu (`demo_sse.php`):**
+```php
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('H:i:s');
+echo "data: Current server time: {$time}\n\n";
+flush();
+?>
+```
+
+---
+
+### **Avantajlar**
+1. **Otomatik Güncellemeler:** İstemcinin sürekli istek göndermesine gerek kalmaz.
+2. **Hafif Yapı:** Çok az veri yükü ile çalışır.
+3. **Kolay Kullanım:** Basit ve anlaşılır bir yapıya sahiptir.
+
+### **Dezavantajlar**
+1. **Tek Yönlü:** Yalnızca sunucudan istemciye veri gönderilebilir.
+2. **HTTPS Gereksinimi:** Modern tarayıcılarda yalnızca güvenli bağlantılarda (HTTPS) çalışır.
+
+SSE, hafif ve sürekli güncelleme gerektiren uygulamalar için idealdir.
+-->
+
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  -->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+  <!--
+
+-->
+
+
+  -->
+</body>
+
+</html>
